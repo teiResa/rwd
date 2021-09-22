@@ -36,7 +36,8 @@ main {
 #explaination {
   grid-area: 1/1/2/2;
   background-color: lightblu;
-  height: 50px;
+  height: auto;
+  margin-bottom; 5%;
 }
 
 #table {
@@ -51,12 +52,12 @@ main {
 
 a {
   text-decoration: none;
-  
+
 }
 
 
 #certificate {
-  background-color: lightpink;
+  background-color: lightpin;
   width: 100%;
   height: 100%;
 }
