@@ -36,15 +36,25 @@ main {
 table {
   grid-area: 1/2/2/3;
   justify-self: center;
-  background-color: lightgrey;
-  width: 100%;
+  background-color: hsl(237,93%,69%);
 
-  opacity: 0.8;
-  z-index: 4;
+  padding: 3%;
 }
 
 #table {
-  opacity: 100%;
+  background-color: hsl(237,93%,89%);
+  border-radius: 10px;
+  width:80%;
+  position: absolute;
+  left: 120px;
+
+  opacity: 0.6;
+  z-index: 4;
+}
+
+#table img {
+  width: 100px;
+  height: 70px;
 }
 
 
@@ -63,4 +73,24 @@ a {
   background-color: lightpin;
   width: 80%;
   height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    display: flex;
+    flex-driection: column;
+
+
+  }
+
+
+
+
+}
+
+@media screen and (max-width: 480px) {
+  #table{
+    width: 80%;
+    left: 10%;
+  }
 }
