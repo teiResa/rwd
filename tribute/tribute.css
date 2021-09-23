@@ -1,18 +1,24 @@
 #main {
 	display:grid;
-	grid-template-rows: 1fr 5fr;
+	grid-template-rows: 1fr auto;
 	grid-template-areas: "header" "content";
 	width: 105%;
 	position: relative;
 	right: 10px;
 	bottom: 10px;
 
+  font-family: 'Gaegu', cursive, serif;
+
+  max-height: 1000px;
 }
 
 header {
 	display: flex;
 	justify-content: center;
+  flex-direction:column;
 	background-color: #646363;
+
+
 }
 
 #title {
@@ -22,6 +28,8 @@ header {
 	color: lightblue;
 	width:100%;
 	border: ;
+  font-family: 'Gaegu', cursive;
+  font-size: x-large;
 }
 
 #title h1{
@@ -35,6 +43,7 @@ header {
 	overflow-y: hidden;
 	padding-left: 15px;
 	padding-right: 12px;
+  padding-top: 20px;
 
 
 	display:grid;
@@ -74,12 +83,18 @@ header {
 	padding: 3%;
 	padding-left:10px;
 	position:absolute;
+  bottom: 50%;
 
 	color:black;
 	background-color: rgba(167, 241, 167, .5);
 	border-radius:10px;
+  font-family: cursive;
 
-
+}
+#img-caption #caption {
+  flex-wrap: wrap;
+  justify-self: center;
+  max-width: 40%;
 }
 
 #tribute-info {
@@ -97,9 +112,11 @@ header {
 
 #tribute-caption{
 	padding: 3%;
-	justify-self:center;
-	justify-items:center;
+	align-self:center;
 
+
+  font-family: 'Gaegu', cursive;
+  font-size: x-large;
 }
 
 #timeline {
@@ -111,6 +128,17 @@ header {
 	background-color: hsl(120, 73%, 80%);
 	border-radius:15px;
 
+  font-family: Lato,sans-serif;
+
+}
+
+#timeline ul {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#timeline p {
+  font-family: 'Gaegu', cursive;
 }
 
 #mean-quote {
@@ -132,6 +160,10 @@ header {
 	bottom: 10px;
 
 }
+
+  #main {
+      max-height: 2500px;;
+  }
 
 	header{
 		height:100%;
@@ -183,6 +215,21 @@ header {
   margin: 0 auto;
 
 }
+
+  #img-caption {
+    position:absolute;
+    bottom: 50%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  #img-caption #caption{
+    max-width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
 	#tribute-info {
 	grid-area:2/1/3/2;
