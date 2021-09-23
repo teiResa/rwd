@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FCC Survey </title>
+
+    <link rel="stylesheet" href="survey.css">
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1 id="title">A Survey</h1>
+      </div>
+      <div id="description-div">
+        <p id="description">
+        Never heard of a survey? You fill out the form.
+        If it's a rectangle, you type words. If it's a little dot, you click the
+          dot to fill it with another dot. This is now selected. If it's a square,
+         you can select multiple with dots. Good luck. There are no wrong answers.
+         </p>
+      </div>
+    </header>
+      <form id="survey-form" action="index.html" method="post">
+        <div class="form-items">
+          <label for="name" id="name-label"> Name </label>
+          <input type="text" name="name" id="name" placeholder="name" value="" required>
+              <!-- needs validator -->
+        </div>
+        <div class="form-items">
+          <label for="email" id="email-label"> Email</label>
+          <input type="text" name="email" id="email" placeholder="example@email.com" value="" required>
+            <!-- needs validator -->
+        </div>
+        <div class="form-items">
+          <label for="number" id="number">Pick a number</label>
+          <input type="text" id="number" placeholder="0 - 100" name=" number" value="">
+            <!-- needs max and min still and validator -->
+        </div>
+        <div class="form-items">
+            <!-- dropdown menu -->
+        </div>
+        <div class="form-items">
+          <p class="instruction">Pick one of each of the following:</p>
+          <hr>
+          <p>Do you prefer cats or dogs?</p>
+            <input type="radio" name="cat-dog" id="cats" checked>
+            <label for="cats">cats</label>
+            <input type="radio" name="cat-dog" id="dogs">
+            <label for="dogs">dogs</label>
+          <p>Do you have a furry friend?</p>
+            <input type="radio" name="friend" id="no">
+            <label for="no">no</label>
+            <input type="radio" name="friend" id="yes">
+            <label for="yes">yes</label>
+        </div>
+        <div class="form-items">
+          <p>Which colours can been seen from your vantage point?</p>
+            <label for="">
+              <input type="checkbox" name="colours" id="pink" value="1">
+              Pink
+            </label>
+            <label for="">
+              <input type="checkbox" name="colours" id="pink">
+              Pink
+            </label>
+            <label for="">
+              <input type="checkbox" name="colours" id="pink">
+              Pink
+            </label>
+            <label for="">
+              <input type="checkbox" name="colours" id="pink">
+              Pink
+            </label>
+            <label for="">
+              <input type="checkbox" name="colours" id="pink">
+              Pink
+            </label>
+            <label for="">
+              <input type="checkbox" name="colours" id="pink">
+              Pink
+            </label>
+            <label for="">
+              <input type="checkbox" name="colours" id="pink">
+              Pink
+            </label>
+            <label for="">
+              <input type="checkbox" name="colours" id="pink">
+              Pink
+            </label>
+            <label for="">
+              <input type="checkbox" name="colours" id="pink">
+              Pink
+            </label>
+            <label for="">
+              <input type="checkbox" name="colours" id="pink">
+              Pink
+            </label>
+            <label for="">
+              <input type="checkbox" name="colours" id="pink">
+              Pink
+            </label>
+            <label for="">
+              <input type="checkbox" name="colours" id="pink">
+              Pink
+            </label>
+
+        </div>
+        <div class="form-items">
+
+        </div>
+
+
+          <input type="textarea" placeholder="Anything else." name="comments" value="">
+          <button type="submit" id="submit" name="button">Submit</button>
+      </form>
+
+
+
+
+
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" charset="utf-8"></script>
+</html>
