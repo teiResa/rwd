@@ -14,123 +14,157 @@
 
   </head>
   <body>
-    <header>
-      <div>
-        <h1 id="title">A Silly Survey</h1>
-      </div>
-      <div id="description-div">
-        <p id="description">
-          Never heard of a survey? You fill out the form.
-            If it's a rectangle, you type words. If it's a little dot, you click the
-            dot to fill it with another dot. This is now selected. If it's a square,
-           you can select multiple with dots. Good luck. There are no wrong answers.
-         </p>
-      </div>
-    </header>
-      <form id="survey-form" action="index.html" method="post">
-        <div class="form-items">
-          <label for="name" id="name-label"> 🐱‍💻 What's your favourite name? </label>
-          <input type="name" name="name" id="name" placeholder="name" value=""  required>
+    <main>
 
-        </div>
-        <div class="form-items">
-          <label for="email" id="email-label"> 🌐 Email</label>
-          <input type="email" name="email" id="email" placeholder="example@email.com" value="" required>
+    <div="main-div">
 
-        </div>
-        <div class="form-items">
-          <label for="number" id="number-label">💯 Pick a number</label>
-          <input type="number" id="number" placeholder="0 - 100" min="0" max="100" name="number" value="">
 
+
+      <div id="form-div">
+        <div id="form-top">
+          <div>
+            <h1 id="title">A Silly Survey</h1>
+          </div>
+          <div id="description-div">
+            <p id="description">
+              Never heard of a survey? You fill out the form.
+                If it's a rectangle, you type words. If it's a little dot, you click the
+                dot to fill it with another dot. This is now selected. If it's a square,
+               you can select multiple with dots. Good luck. There are no wrong answers.
+             </p>
+          </div>
         </div>
-        <div class="form-items">
-            <p> Which is your favourite food group? </p>
-            <select class="form-component" name="food-groups" id="dropdown">
-              <option value="produce"> 🥗 Fruit & Veg 🥭</option>
-              <option value="grains">🥨 Grains 🥡</option>
-              <option value="meat">🍗 Meat & alts 🍄</option>
-              <option value="dairy">🍦 Dairy & alts 🥥</option>
-            </select>
+
+        <form id="survey-form" action="index.html" method="post">
+          <div id="text-answers">
+              <div class="form-items">
+              <label for="name" id="name-label"> 🐱‍💻 What's your name? </label> <br>
+              <input type="name" name="name" id="name" placeholder="name" value=""  required>
+            </div>
+            <br>
+
+            <div class="form-items">
+              <label for="email" id="email-label"> 🌐 Email</label><br>
+              <input type="email" name="email" id="email" placeholder="example@email.com" value="" required>
+            </div>
+            <br>
+
+            <div class="form-items">
+              <label for="number" id="number-label">💯 Pick a number</label><br>
+              <input type="number" id="number" placeholder="0 - 100" min="0" max="100" name="number" value="">
+            </div>
+        
         </div>
-        <div class="form-items">
-          <p class="instruction">Pick one of each of the following:</p>
+
+
           <hr>
-          <p>Do you prefer cats or dogs?</p>
-            <input type="radio" name="cat-dog" id="cats" value="cats" checked>
-            <label for="cats"> 🐱 cats</label>
-            <input type="radio" name="cat-dog" id="dogs" value="dogs">
-            <label for="dogs"> 🐶 dogs</label>
-          <p>Have you smiled today?</p>
-            <input type="radio" name="smile" id="no" value="no">
-            <label for="no"> 😣 no</label>
-            <input type="radio" name="smile" id="yes"value="yes">
-            <label for="yes"> 😁 yes</label>
-        </div>
-        <div class="form-items">
-          <p>Which colours can been seen from your vantage point?</p>
-            <label for="red">
-              <input type="checkbox" name="colours" id="red" value="red">
-              🔴red
-            </label>
-            <label for="orange">
-              <input type="checkbox" name="colours" id="orange" value="orange">
-              🟠 orange
-            </label>
-            <label for="magenta">
-              <input type="checkbox" name="colours" id="magenta" value="magenta">
-              🟣magenta
-            </label>
-            <label for="blue">
-              <input type="checkbox" name="colours" id="blue" value="blue">
-              🔵blue
-            </label>
-            <label for="cyan">
-              <input type="checkbox" name="colours" id="cyan" value="cyan">
-              🟤cyan
-            </label>
-            <label for="green">
-              <input type="checkbox" name="colours" id="green" value="green">
-              🟢green
-            </label>
-            <label for="yellow">
-              <input type="checkbox" name="colours" id="yellow" value="yellow">
-              🟡yellow
-            </label>
-            <label for="black">
-              <input type="checkbox" name="colours" id="black" value="black">
-              ⚫black
-            </label>
-            <label for="white">
-              <input type="checkbox" name="colours" id="white" value="white">
-              ⚪white
-            </label>
-            <label for="non-applicable">
-              <input type="checkbox" name="colours" id="non-applicable" value="non-applicable">
-              🚫N/A
-            </label>
+            <p class="instruction">Pick one of each of the following:</p>
+          <hr>
+          <div class="form-items" id="a-or-b">
+            <div class="form-items">
+                <p> Which is your favourite food group? </p>
+                <select class="form-component" name="food-groups" id="dropdown">
+                  <option value="produce"> 🥗 Fruit & Veg 🥭</option>
+                  <option value="grains">🥨 Grains 🥡</option>
+                  <option value="meat">🍗 Meat & alts 🍄</option>
+                  <option value="dairy">🍦 Dairy & alts 🥥</option>
+                </select>
+            </div>
+            <p>Do you prefer cats or dogs?</p>
+              <input type="radio" name="cat-dog" id="cats" value="cats" checked>
+              <label for="cats"> 🐱 cats</label>
+              <input type="radio" name="cat-dog" id="dogs" value="dogs">
+              <label for="dogs"> 🐶 dogs</label>
+            <p>Have you smiled today?</p>
+              <input type="radio" name="smile" id="no" value="no">
+              <label for="no"> 😣 no</label>
+              <input type="radio" name="smile" id="yes"value="yes">
+              <label for="yes"> 😁 yes</label>
+          </div>
 
 
-        </div>
-        <div class="form-items">
+          <hr>
+          <p class="instruction"> Now you can pick as many as you wish:</p>
+          <hr>
+          <div class="form-items" id="colours">
+            <p>Which colours can been seen from your vantage point?</p>
+             <br>
+             <div>
+              <label for="red">
+                <input type="checkbox" name="colours" id="red" value="red">
+                🔴red
+              </label>
+              <label for="orange">
+                <input type="checkbox" name="colours" id="orange" value="orange">
+                🟠 orange
+              </label>
+              <label for="magenta">
+                <input type="checkbox" name="colours" id="magenta" value="magenta">
+                🟣magenta
+              </label>
+              <label for="blue">
+                <input type="checkbox" name="colours" id="blue" value="blue">
+                🔵blue
+              </label>
+              <label for="cyan">
+                <input type="checkbox" name="colours" id="cyan" value="cyan">
+                🟤cyan
+              </label>
+              <label for="green">
+                <input type="checkbox" name="colours" id="green" value="green">
+                🟢green
+              </label>
+              <label for="yellow">
+                <input type="checkbox" name="colours" id="yellow" value="yellow">
+                🟡yellow
+              </label>
+              <label for="black">
+                <input type="checkbox" name="colours" id="black" value="black">
+                ⚫black
+              </label>
+              <label for="white">
+                <input type="checkbox" name="colours" id="white" value="white">
+                ⚪white
+              </label>
+              <label for="non-applicable">
+                <input type="checkbox" name="colours" id="non-applicable" value="non-applicable">
+                🚫N/A
+              </label>
+            </div>
 
-        </div>
+
+          </div>
+          <div class="form-items">
+
+          </div>
 
 
 
 
-        <label for="comment">
-          <p> What do you have to say for yourself? </p>
-          <textarea name="comment" rows="8" cols="40" placeholder="type here..."></textarea>
+          <label for="comment">
+            <p> What do you have to say for yourself? </p>
+            <textarea name="comment" rows="8" cols="40" placeholder="type here..."></textarea>
 
-        </label>
-        <br>
+          </label>
+          <br>
+          <div id="button-div">
+            <button type="submit" id="submit" name="button">Submit</button>
+          </div
+        </form>
 
-        <button type="submit" id="submit" name="button">Submit</button>
-      </form>
 
 
+      </div>
 
 
+        <footer>
+
+
+        </footer>
+
+
+      </main-div>
+      </main>
 
   </body>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" charset="utf-8"></script>

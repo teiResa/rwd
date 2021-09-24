@@ -1,6 +1,97 @@
 * {
-  background-color: pink;
+  background-color: ;
   font-family: "Open Sans";
 }
 
-#survey-form {}
+body {
+  display: flex;
+  justify-content: center;
+
+
+}
+
+hr {
+  width: 45%;
+  height: 1px;
+
+}
+
+main {
+  width: 60%;
+  display: grid;
+  padding:10%;
+
+
+
+  grid-template-areas:
+    "header" "content" "footer";
+
+
+
+}
+
+.instruction {
+  font-weight: bold;
+  display: flex;
+  justify-self: center;
+}
+
+#header {
+  grid-area: content;
+
+  border: 2px inset lightyellow;
+  padding: 3px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+#form-div {
+  grid-area: content;
+  border: 2px outset lightyellow;
+  background-color: pink;
+  padding:10px
+}
+
+
+#form-top {
+  background-color: lightyellow;
+  border: 2px outset lightyellow;
+  padding: 3px;
+
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+#text-answers {
+  border: 2px inset lightyellow;
+  padding:23px;
+
+}
+
+
+#a-or-b {
+  border: 2px inset lightyellow;
+  padding: 23px;
+  padding-top: 13px;
+}
+
+#colours {
+  display: flex;
+  flex-flow: row wrap;
+  border: 2px inset lightyellow;
+  padding: 23px;
+  padding-top: 13px;
+}
+
+
+#button-div {
+  display: flex;
+  flex-direction: row-reverse;
+  border: 2px inset lightyellow;
+  padding: 3px;
+  width:auto;
+}
+
+footer {
+  grid-area:footer;
+}
