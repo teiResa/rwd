@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>FCC Survey </title>
+    <title>Silly Survey </title>
 
 
     <link rel="stylesheet" href="survey.css">
@@ -16,7 +16,7 @@
   <body>
     <header>
       <div>
-        <h1 id="title">A Survey</h1>
+        <h1 id="title">A Silly Survey</h1>
       </div>
       <div id="description-div">
         <p id="description">
@@ -29,27 +29,27 @@
     </header>
       <form id="survey-form" action="index.html" method="post">
         <div class="form-items">
-          <label for="name" id="name-label"> Name </label>
+          <label for="name" id="name-label"> 🐱‍💻 What's your favourite name? </label>
           <input type="name" name="name" id="name" placeholder="name" value=""  required>
 
         </div>
         <div class="form-items">
-          <label for="email" id="email-label"> Email</label>
+          <label for="email" id="email-label"> 🌐 Email</label>
           <input type="email" name="email" id="email" placeholder="example@email.com" value="" required>
 
         </div>
         <div class="form-items">
-          <label for="number" id="number-label">Pick a number</label>
+          <label for="number" id="number-label">💯 Pick a number</label>
           <input type="number" id="number" placeholder="0 - 100" min="0" max="100" name="number" value="">
 
         </div>
         <div class="form-items">
             <p> Which is your favourite food group? </p>
             <select class="form-component" name="food-groups" id="dropdown">
-              <option value="produce">Fruit & Veg</option>
-              <option value="grains">Grains</option>
-              <option value="meat">Meat & alternatives</option>
-              <option value="dairy">Dairy & alternatives</option>
+              <option value="produce"> 🥗 Fruit & Veg 🥭</option>
+              <option value="grains">🥨 Grains 🥡</option>
+              <option value="meat">🍗 Meat & alts 🍄</option>
+              <option value="dairy">🍦 Dairy & alts 🥥</option>
             </select>
         </div>
         <div class="form-items">
@@ -57,56 +57,56 @@
           <hr>
           <p>Do you prefer cats or dogs?</p>
             <input type="radio" name="cat-dog" id="cats" value="cats" checked>
-            <label for="cats">cats</label>
+            <label for="cats"> 🐱 cats</label>
             <input type="radio" name="cat-dog" id="dogs" value="dogs">
-            <label for="dogs">dogs</label>
-          <p>Do you have a furry friend?</p>
-            <input type="radio" name="friend" id="no" value="no">
-            <label for="no">no</label>
-            <input type="radio" name="friend" id="yes"value="yes">
-            <label for="yes">yes</label>
+            <label for="dogs"> 🐶 dogs</label>
+          <p>Have you smiled today?</p>
+            <input type="radio" name="smile" id="no" value="no">
+            <label for="no"> 😣 no</label>
+            <input type="radio" name="smile" id="yes"value="yes">
+            <label for="yes"> 😁 yes</label>
         </div>
         <div class="form-items">
           <p>Which colours can been seen from your vantage point?</p>
             <label for="red">
               <input type="checkbox" name="colours" id="red" value="red">
-              red
+              🔴red
             </label>
-            <label for="pink">
-              <input type="checkbox" name="colours" id="pink" value="pink">
-              pink
+            <label for="orange">
+              <input type="checkbox" name="colours" id="orange" value="orange">
+              🟠 orange
             </label>
             <label for="magenta">
               <input type="checkbox" name="colours" id="magenta" value="magenta">
-              magenta
+              🟣magenta
             </label>
             <label for="blue">
               <input type="checkbox" name="colours" id="blue" value="blue">
-              blue
+              🔵blue
             </label>
             <label for="cyan">
               <input type="checkbox" name="colours" id="cyan" value="cyan">
-              cyan
+              🟤cyan
             </label>
             <label for="green">
               <input type="checkbox" name="colours" id="green" value="green">
-              green
+              🟢green
             </label>
             <label for="yellow">
               <input type="checkbox" name="colours" id="yellow" value="yellow">
-              yellow
+              🟡yellow
             </label>
             <label for="black">
               <input type="checkbox" name="colours" id="black" value="black">
-              black
+              ⚫black
             </label>
             <label for="white">
               <input type="checkbox" name="colours" id="white" value="white">
-              white
+              ⚪white
             </label>
             <label for="non-applicable">
               <input type="checkbox" name="colours" id="non-applicable" value="non-applicable">
-              N/A
+              🚫N/A
             </label>
 
 
@@ -115,10 +115,17 @@
 
         </div>
 
-        <textarea name="comment" rows="8" cols="80" placeholder="type here..."></textarea>
 
-          <input type="textarea" placeholder="Anything else." name="comments" value="">
-          <button type="submit" id="submit" name="button">Submit</button>
+
+
+        <label for="comment">
+          <p> What do you have to say for yourself? </p>
+          <textarea name="comment" rows="8" cols="40" placeholder="type here..."></textarea>
+
+        </label>
+        <br>
+
+        <button type="submit" id="submit" name="button">Submit</button>
       </form>
 
 
