@@ -47,13 +47,24 @@ h1 {
 }
 
 main {
+  justify-self: center;
   grid-area: content;
+  width: 80%;
 
+
+}
+
+#video-box {
+ margin: 0;
 }
 
 #video {
   border: 7px outset #A40606;
 
+}
+
+p{
+  text-align: center;
 }
 
 h2 {
@@ -67,7 +78,7 @@ form {
   display: flex;
   flex-direction:column;
   justify-content: center;
-  
+
 }
 
 .form-items{
