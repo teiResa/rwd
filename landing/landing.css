@@ -29,3 +29,7 @@ h2 {
 .form-items{
   display: inline-block;
 }
+
+@@media screen AND (min-width: 700px ) {
+
+}
