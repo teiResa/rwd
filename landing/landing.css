@@ -18,7 +18,8 @@ grid-template-areas: "header" "content";
   grid-area: header;
 
   height: 100px;
-  background-color: #f9ea8f;
+  background-color: #f9ea8f55;
+  background-image: linear-gradient(313deg, #aff1da55 10%,  #f9ea8f 76%, #aff1da55 0%);
   display: flex;
   justify-content: space-evenly ;
   align-items: center;
@@ -36,8 +37,7 @@ h1 {
 }
 
 #nav-bar {
-  text-decoration-line: none;
-  text-decoration-color: #A40606;
+  text-decoration: none;
 
 
 
@@ -46,12 +46,17 @@ h1 {
 #nav-link {
   margin: 5px;
   align-self: baseline;
+
+  text-decoration-line: none;
+  text-decoration-color: #A40606;
+
 }
 
 main {
   justify-self: center;
   grid-area: content;
   width: 80%;
+
 
 
 }
@@ -64,7 +69,7 @@ main {
 }
 
 #video {
-  border: 7px outset #A40606;
+  border: 7px outset #a4060633;
 
 
 }
@@ -75,21 +80,64 @@ p{
 
 h2 {
   color: #A40606;
+  font-size: 2em;
+}
+
+
+#prices {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+
+
+}
+
+.price-box {
+  background-color: #a4060633;
+  margin: 10px;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-number {
+  display: inline-flex;
+  align-content: flex-end;
+}
+
+#form-div {
+  display: flex;
+  justify-content: center;
 }
 
 form {
-
+  background-color: #a4060633;
   width: 60%;
-  border: 2px dotted red;
+
+  align-self: center;
   display: flex;
   flex-direction:column;
   justify-content: center;
+  align-items: center;
 
 }
 
 .form-items{
   display: inline-block;
 }
+
+#name, #email {
+  display: inline-flex;
+  align-self: stretch;
+}
+
+#submit, textarea {
+  width: 352px;
+}
+
+
+
 
 @media screen AND (max-width: 768px ) {
   h1 {
