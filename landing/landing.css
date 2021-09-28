@@ -8,7 +8,11 @@ display: grid;
 grid-template-rows: 1fr 7fr;
 grid-template-areas: "header" "content";
 
+
 }
+
+
+
 
 #header {
   position: fixed;
@@ -138,6 +142,8 @@ form {
 .form-items{
   display: inline-block;
 }
+
+
 
 #name, #email {
   display: inline-flex;
