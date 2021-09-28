@@ -1,3 +1,7 @@
+body {
+  font-size: 25px;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -36,13 +40,13 @@ main {
 table {
   grid-area: 1/2/2/3;
   justify-self: center;
-  background-color: hsl(237,93%,69%);
+
 
   padding: 3%;
 }
 
 #table {
-  background-color: hsl(237,93%,89%);
+  background-color: #ffffff55;
   border-radius: 10px;
   width:80%;
   position: absolute;

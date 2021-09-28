@@ -56,10 +56,12 @@ main {
   justify-self: center;
   grid-area: content;
   width: 80%;
-
-
+  position: absolute;
+  top: 90px;
 
 }
+
+
 
 #video-box {
  margin: 0;
@@ -76,6 +78,15 @@ main {
 
 p{
   text-align: center;
+}
+
+.section-title::before {
+  display: block;
+  content: "";
+  margin-top: -98px;
+  height: 120px;
+  visibility: hidden;
+
 }
 
 h2 {
@@ -114,6 +125,7 @@ h2 {
 form {
   background-color: #a4060633;
   width: 60%;
+  margin-bottom: 30px;
 
   align-self: center;
   display: flex;
