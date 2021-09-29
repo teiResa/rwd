@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RWD: new-to-me</title>
+
+    <link rel="icon" href="../assets/teiResaHead.ico">
+    <link rel="stylesheet" href="technicalDoc.css">
+  </head>
+  <body>
+
+<main id="main-doc">
+  <nav id="navbar">
+    <header>
+
+    </header>
+
+
+    <a href="#" class="nav-link">User Input</a>
+    <a href="#" class="nav-link">Opacity</a>
+    <a href="#" class="nav-link"></a>
+    <a href="#" class="nav-link"></a>
+    <a href="#" class="nav-link"></a>
+    <a href="#" class="nav-link"></a>
+    <a href="#" class="nav-link"></a>
+    <a href="#" class="nav-link"></a>
+  </nav>
+
+  <hr><hr>
+  <aside class="terminology">
+    <a href="#" class="nav-link">Iterating</a>
+    <a href="#" class="nav-link"></a>
+    <a href="#" class="nav-link"></a>
+    <a href="#" class="nav-link"></a>
+    <a href="#" class="nav-link"></a>
+    <a href="#" class="nav-link"></a>
+    <a href="#" class="nav-link"></a>
+  </aside>
+<hr><hr>
+
+  <section class="main-section" id="user-input">
+    <header> User Input </header>
+
+    <article class="">
+      <p>Textboxes, radio buttons, check boxes, and dropdown lists.</p>
+
+      <code>
+        &lt;form class="" action="index.html" method="post"&gt;
+        <br>
+          &lt;input <b>type="__<u>text</u>__"</b> name="" value="" <b>required</b>&gt;
+          <br>
+          &lt;button type="button" name="button" &gt; button name &lt;/button &gt;
+          <br>
+        &lt;/form&gt;
+      </code>
+      <p><b>Accessibility:</b> Set a <i>for</i> attribute on the label element,
+         with a value that matches the input element's ID attribute.
+         Assistive tech uses this to create a connection between the label
+         and its related input field. </p>
+        <p>Type can be checkboxes or radio buttons. But for checkboxes, but the label before the input tag. You may want to give everything classes or IDs.</p>
+         <code>
+           &lt;input <b>type="__<u>radio / checkbox</u>__"</b> name="yes-no" value="yes" checked&gt;
+           <br>
+             &lt;label <b>for="__<u>yes</u>__"</b>"&gt; yes &lt;/label&gt;
+             <br>
+             &lt;input <b>type="__<u>radio / checkbox</u>__"</b> name="yes-no" value="no"&gt;
+             <br>
+               &lt;label <b>for="__<u>no</u>__"</b>"&gt; no &lt;/label&gt;
+         </code>
+      <p>When a form is submitted, the data is then <i>sent to the server and includes for (<code>for</code>) the options selected</i>.
+      <code>input type</code>s radio and checkbox <i>report their values from the <code>value</code> attribute. </i> The data recieved would
+    be <code>yes-no = yes</code></p>
+    <p>If the <code>value</code> attribute is ommitted, the submitted form uses the default value. Which is "on". That may not be
+      ideal for your purposes. <code>yes-no = yes</code> is more intuitive that <code>yes-no = on</code>. Override this with the <code>checked</code> attribute. The <code>required</code> attribute makes input manditory.</p>
+    </article>
+  </section>
+  <section class="main-section" id="opacity">
+    <header> Opacity </header>
+
+    <article class="">
+      <p>There are many ways to make things translucent. </p>
+      <code></code>
+      <p><b>Opacity </b></p>
+      <code></code>
+      <p><b>HEX codes </b></p>
+      <code></code>
+      <p><b>HSL </b></p>
+      <code></code>
+      <p><b>RGBA </b></p>
+      <p></p>
+    </article>
+  </section>
+  <section class="main-section" id="">
+    <header>  </header>
+
+    <article class="">
+      <p></p>
+      <code></code>
+      <p></p>
+    </article>
+  </section>
+  <section class="main-section" id="">
+    <header>  </header>
+
+    <article class="">
+      <p></p>
+      <code></code>
+      <p></p>
+    </article>
+  </section>
+  <section class="main-section" id="">
+    <header>  </header>
+
+    <article class="">
+      <p></p>
+      <code></code>
+      <p></p>
+    </article>
+  </section>
+  <section class="main-section" id="">
+    <header>  </header>
+
+    <article class="">
+      <p></p>
+      <code></code>
+      <p></p>
+    </article>
+  </section>
+  <section class="main-section" id="">
+    <header>  </header>
+
+    <article class="">
+      <p></p>
+      <code></code>
+      <p></p>
+    </article>
+  </section>
+</main>
+
+
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" charset="utf-8"></script>
+</html>
