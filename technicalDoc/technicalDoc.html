@@ -16,14 +16,14 @@
     </header>
 
 
-    <a href="#" class="nav-link">User Input</a>
-    <a href="#" class="nav-link">Opacity</a>
+    <a href="#user-input" class="nav-link">User Input</a>
+    <a href="#opacity" class="nav-link">Opacity</a>
+    <a href="#box-model" class="nav-link">The Box Model</a>
     <a href="#" class="nav-link"></a>
     <a href="#" class="nav-link"></a>
     <a href="#" class="nav-link"></a>
     <a href="#" class="nav-link"></a>
-    <a href="#" class="nav-link"></a>
-    <a href="#" class="nav-link"></a>
+    <a href="#ref" class="nav-link">Reference</a>
   </nav>
 
   <hr><hr>
@@ -79,15 +79,51 @@
 
     <article class="">
       <p>There are many ways to make things translucent. </p>
+      <p>The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.</p>
+
+      <code>opacity: 0.9
+          opacity: 90% <br>
+
+          /* Global values */ <br>
+          opacity: inherit; <br>
+          opacity: initial; <br>
+          opacity: revert;  <br>
+          opacity: unset;</code>
+      <p><b> Alpha-Values </b></p>
+      <p> A number in the range 0.0 to 1.0, inclusive, or a percentage in the range 0% to 100%, inclusive, representing the opacity of the channel (that is, the value of its alpha channel). Any value outside the interval, though valid, is clamped to the nearest limit in the range.</p>
+      <p><b>RGBA </b><code>background: rgba(0, 0, 0, 0.4);</code></p>
+      <p><b>HEX codes </b><code> #rrggbbaa; or #rgba</code></p>
+      <p><b>HSL </b> (sometimes <i>hsla(0, 0%, 0%, 0.4)</i>) functional notation expresses a given color according to its hue, saturation, and lightness components. An optional alpha component represents the color's transparency.</p>
       <code></code>
-      <p><b>Opacity </b></p>
+
+    </article>
+  </section>
+  <section class="main-section" id="box-model">
+    <header> The Box Model </header>
+    <article class="">
+      <p>Everything in CSS has a box around it, and understanding these boxes is key to being able to create layouts with CSS, or to align items with other items.</p>
       <code></code>
-      <p><b>HEX codes </b></p>
-      <code></code>
-      <p><b>HSL </b></p>
-      <code></code>
-      <p><b>RGBA </b></p>
-      <p></p>
+      <p><b>Block and inline boxes</b>  refer to how the box behaves in terms of page flow and in relation to other boxes on the page. Boxes also have an inner display type and an outer display type.
+       </p>
+
+       <ul>
+         <p>If a box has an outer display type of <b>Block</b>,  it will behave in the following ways: </p>
+         <li>The box will break onto a new line.</li>
+         <li>The box will extend in the inline direction to fill the space available in its container. In most cases this means that the box will become as wide as its container, filling up 100% of the space available.</li>
+         <li>The <i>width</i> and <i>height</i> properties are respected.</li>
+         <li>Padding, margin and border will cause other elements to be pushed away from the box</li>
+       </ul>
+       <p>Some HTML elements, such as &lt;h1&gt; and &lt;p&gt;, use block as their outer display type by default.</p>
+      <ul>
+        <p>If a box has an outer display type of <b>inline</b>:</p>
+        <li>The box will not break onto a new line.</li>
+        <li>The width and height properties will not apply.</li>
+        <li>Vertical padding, margins, and borders will apply but will not cause other inline boxes to move away from the box.</li>
+        <li>Horizontal padding, margins, and borders will apply and will cause other inline boxes to move away from the box.</li>
+      </ul>
+      <p>Some HTML elements, such as &lt;a&gt;, &lt;span&gt;, &lt;em&gt;, and &lt;strong&gt; use inline as their outer display type by default.
+          <br><br>
+        The type of box applied to an element is defined by <i>display</i> property values such as block and inline, and relates to the outer value of display.</p>
     </article>
   </section>
   <section class="main-section" id="">
@@ -117,23 +153,16 @@
       <p></p>
     </article>
   </section>
-  <section class="main-section" id="">
-    <header>  </header>
+  <hr>
+  <section class="main-section" id="Reference">
+    <header> Reference </header>
 
     <article class="">
-      <p></p>
-      <code></code>
-      <p></p>
-    </article>
-  </section>
-  <section class="main-section" id="">
-    <header>  </header>
-
-    <article class="">
-      <p></p>
-      <code></code>
-      <p></p>
-    </article>
+      <ul>
+        Sources:
+        <li>The documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN</a></li>
+        <li>My notes from FCC's <a href="https://www.freecodecamp.org/learn/responsive-web-design/">Responsive Web Design Bootcamp. </a> </li>
+      </ul>
   </section>
 </main>
 
