@@ -1,0 +1,209 @@
+
+
+/* ============= BELOW IS ANIMATION AND ART STUFF ONLY ========= */
+
+
+/* ============= Animation font text =========
+The spinning heads (originally cubes) came from Nour Ibram's codepen
+  https://codepen.io/nouribram/pen/OzqNvJ
+
+The animated gradient on text was based on Alex Caudra's pen
+https://codepen.io/alexcu21/pen/RYxjme
+*/
+#rainbow{
+  position:absolute;
+  font-family:'oddballz';
+  top:40%;
+  left:50%;
+  font-weight:200;
+  font-size:800%;
+  text-align: left;
+  text-transform: initial;
+  text-shadow:  4px 4px 0px #d5d5d5cc, 7px 7px 0px rgba(0, 0, 0, 0.2);
+  transform:translate(-50%, -50%);
+  color:rgba(255, 255, 255, .1);
+  background: linear-gradient(to right,     rgb(76, 217, 105), rgb(52, 170, 220),     rgb(88, 86, 217), rgb(255, 45, 83),       rgb(255, 45, 83), rgb(88, 86, 217),       rgb(52, 170, 220), rgb(76, 217, 105));
+  background-size: 200%;
+
+  -webkit-background-clip:text;
+  animation:sTransition 3s linear infinite;
+}
+
+@keyframes sTransition{
+  0%{
+    background-position:0%;
+  }
+
+  100%{
+    background-position:200%;
+  }
+}
+
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.container-fluid{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #FFF;
+}
+/* ============= Animation background ========= */
+.background {
+  background: linear-gradient(232deg, #FC415A, #591BC5, #212335);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding:0;
+  margin:0px;
+
+
+}
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 1px;
+  height: 1px;
+
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 7s ease-in forwards infinite;
+}
+
+
+.cube-reverse {
+  position: absolute;
+  top: 15vh;
+  left: 45vw;
+  width: 1px;
+  height: 1px;
+
+
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube-reverse 8s ease-in forwards infinite;
+}
+.cube:nth-child(2n) {
+  border-color: #FFF ;
+
+}
+.cube-reverse:nth-child(2) {
+
+  animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
+}
+.cube:nth-child(2) {
+
+  animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
+}
+.cube:nth-child(3) {
+  animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+.cube:nth-child(4) {
+  animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+.cube-reverse:nth-child(4) {
+  animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+.cube:nth-child(5) {
+  animation-delay: 8s;
+  left: 10vw;
+  top: 85vh;
+}
+.cube:nth-child(6) {
+  animation-delay: 10s;
+  left: 50vw;
+  top: 10vh;
+}
+/* ================= Header ============ */
+header{
+  position: absolute;
+  top:5px;
+  left: 5px;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Header content & title & button*/
+.header-content{
+  margin-top:35%;
+  text-align: center;
+  color:  #EFEEF5;
+}
+.header-content h1{
+  font-size: 3em;
+  letter-spacing: 1px;
+}
+.header-content p {
+  font-size: 20px;
+  color: #EFEEF5bb;
+  line-height: 1.5;
+  margin: 20px auto;
+	font-family: arial, sans-serif, inherit;
+}
+.header-content button{
+  width: 140px;
+  margin:20px 10px;
+  color: #591BC5;
+  font-size: 17px;
+  border:1px solid #EFEEF5bb;
+  font-weight: 500;
+  background: #EFEEF555;
+  border-radius: 20px;
+  padding: 10px;
+  cursor:pointer;
+  transition: .3s;
+}
+.header-content button:hover{
+  border-radius: 0;
+}
+/* Animate Background*/
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(5) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+@keyframes cube-reverse {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(5) rotate(-1440deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
