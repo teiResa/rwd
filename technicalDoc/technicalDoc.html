@@ -14,37 +14,48 @@
     <header>
       Things I Learned in this bootcamp
     </header>
-    <a href="#user_input" class="nav-link">User Input</a>
-    <a href="#opacity" class="nav-link">Opacity</a>
-    <a href="#box_model" class="nav-link">The Box Model</a>
-    <a href="#offset" class="nav-link">Offsetting</a>
-    <a href="#color_theory" class="nav-link">Colour Theory</a>
-    <a href="#background" class="nav-link">Backgrounds</a>
-    <a href="#art" class="nav-link">CSS Art</a>
-    <a href="#animation" class="nav-link">CSS Animation</a>
-    <a href="#bezier" class="nav-link">Bezier Curves</a>
-    <a href="#ref" class="nav-link">Reference</a>
+    <li>
+        <a href="#user_input" class="nav-link">User Input</a>
+    </li>
+    <li>
+        <a href="#opacity" class="nav-link">Opacity</a>
+    </li>
+    <li>
+        <a href="#the_box_model" class="nav-link">The Box Model</a>
+    </li>
+    <li>
+        <a href="#offsetting" class="nav-link">Offsetting</a>
+    </li>
+    <li>
+        <a href="#color_theory" class="nav-link">Color Theory</a>
+    </li>
+    <li>
+        <a href="#backgrounds" class="nav-link">Backgrounds</a>
+    </li>
+    <li>
+        <a href="#css_art" class="nav-link">CSS Art</a>
+    </li>
+    <li>
+        <a href="#css_animation" class="nav-link">CSS Animation</a>
+    </li>
+    <li>
+        <a href="#bezier_curves" class="nav-link">Bezier Curves</a>
+    </li>
+    <li>
+        <a href="#reference" class="nav-link">Reference</a>
+    </li>
   </nav>
 
-  <hr><hr>
-  <aside class="terminology">
-    <a href="#" class="nav-link">Iterating</a>
-    <a href="#" class="nav-link"></a>
-    <a href="#" class="nav-link"></a>
-    <a href="#" class="nav-link"></a>
-    <a href="#" class="nav-link"></a>
-    <a href="#" class="nav-link"></a>
-    <a href="#" class="nav-link"></a>
-  </aside>
 <hr><hr>
 
+<section id="content">
   <section class="main-section" id="user_input">
     <header>User Input</header>
 
     <article class="">
       <p>Textboxes, radio buttons, check boxes, and dropdown lists.</p>
 
-      <code>
+      <code id="code">
         &lt;form class="" action="index.html" method="post"&gt;
         <br>
           &lt;input <b>type="__<u>text</u>__"</b> name="" value="" <b>required</b>&gt;
@@ -58,7 +69,7 @@
          Assistive tech uses this to create a connection between the label
          and its related input field. </p>
         <p>Type can be checkboxes or radio buttons. But for checkboxes, but the label before the input tag. You may want to give everything classes or IDs.</p>
-         <code>
+         <code id="code">
            &lt;input <b>type="__<u>radio / checkbox</u>__"</b> name="yes-no" value="yes" checked&gt;
            <br>
              &lt;label <b>for="__<u>yes</u>__"</b>"&gt; yes &lt;/label&gt;
@@ -81,7 +92,7 @@
       <p>There are many ways to make things translucent. </p>
       <p>The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.</p>
 
-      <code>opacity: 0.9
+      <code id="code">opacity: 0.9
           opacity: 90% <br>
 
           /* Global values */ <br>
@@ -98,11 +109,11 @@
 
     </article>
   </section>
-  <section class="main-section" id="box_model">
+  <section class="main-section" id="the_box_model">
     <header>The Box Model</header>
     <article class="">
       <p>Everything in CSS has a box around it, and understanding these boxes is key to being able to create layouts with CSS, or to align items with other items.</p>
-      <code></code>
+
       <p><b>Block and inline boxes</b>  refer to how the box behaves in terms of page flow and in relation to other boxes on the page. Boxes also have an inner display type and an outer display type.
        </p>
 
@@ -126,12 +137,12 @@
         The type of box applied to an element is defined by <i>display</i> property values such as block and inline, and relates to the outer value of display.</p>
     </article>
   </section>
-  <section class="main-section" id="offset">
+  <section class="main-section" id="offsetting">
     <header>Offsetting</header>
 
     <article class="">
       <p></p>
-      <code></code>
+      <codeid="code"></code>
       <p></p>
     </article>
   </section>
@@ -140,11 +151,11 @@
 
     <article class="">
       <p></p>
-      <code></code>
+      <code id="code"></code>
       <p></p>
     </article>
   </section>
-  <section class="main-section" id="background">
+  <section class="main-section" id="backgrounds">
     <header>Backgrounds</header>
 
     <article class="">
@@ -153,7 +164,7 @@
       <p></p>
     </article>
   </section>
-  <section class="main-section" id="art">
+  <section class="main-section" id="css_art">
     <header>CSS Art</header>
 
     <article class="">
@@ -162,7 +173,7 @@
       <p></p>
     </article>
   </section>
-  <section class="main-section" id="animation">
+  <section class="main-section" id="css_animation">
     <header>CSS Animation</header>
 
     <article class="">
@@ -171,7 +182,7 @@
       <p></p>
     </article>
   </section>
-  <section class="main-section" id="bezier">
+  <section class="main-section" id="bezier_curves">
     <header>Bezier Curves</header>
 
     <article class="">
@@ -182,7 +193,7 @@
   </section>
 
   <hr>
-  <section class="main-section" id="ref">
+  <section class="main-section" id="reference">
     <header>Reference</header>
 
     <article class="">
@@ -192,6 +203,7 @@
         <li>My notes from FCC's <a href="https://www.freecodecamp.org/learn/responsive-web-design/">Responsive Web Design Bootcamp. </a> </li>
       </ul>
   </section>
+</section>
 </main>
 
 
