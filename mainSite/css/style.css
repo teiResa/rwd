@@ -32,7 +32,7 @@ main {
 
 #explaination {
   grid-area: 1/1/2/2;
-  background-color: lightblu;
+  background-color: lightbl;
   height: auto;
   margin-bottom: 5%;
 }
@@ -81,6 +81,12 @@ a {
 
 @media screen and (max-width: 600px) {
 
+
+  table {
+    display: grid
+    grid-template-areas:
+    "";
+  }
   #table {
     display: flex;
     flex-direction: column;
@@ -97,6 +103,14 @@ a {
 }
 
 @media screen and (max-width: 480px) {
+  table {
+    grid-area: 1/2/2/3;
+    justify-self: center;
+
+
+    padding: 3%;
+  }
+
   #table{
     width: 80%;
     left: 10%;
