@@ -80,13 +80,17 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-  table {
-    display: flex;
-    flex-driection: column;
 
+  #table {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    left: 10%;
 
   }
-
+  #table img {
+    margin-left: 15%;
+  }
 
 
 
@@ -96,5 +100,23 @@ a {
   #table{
     width: 80%;
     left: 10%;
+  }
+  #table img {
+    margin-left: 15%;
+    width: 550px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  #table {
+    width: 90%;
+    left: 5%;
+  }
+
+  #table img {
+    margin-left: 15%;
+    width: 550px;
+    height: auto;
   }
 }
