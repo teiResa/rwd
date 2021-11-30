@@ -8,7 +8,14 @@ header {
   z-index: 2;
 }
 
+aside {
 
+  background-image: url('https://teiresa.github.io/background/progThermometer/progThermometer.html');
+   background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;">
+
+}
 main {
   z-index: 0;
   display: grid;
