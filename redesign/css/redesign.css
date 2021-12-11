@@ -1,0 +1,28 @@
+.tei_header {
+  content: "";
+  height: 25%;
+  background-color: pink;
+}
+
+.tei_tabs {
+  display: flex;
+  flex-direction: row;
+  background-color: lightgrey;
+
+}
+
+.tei_tabs_tabs{
+  width: 25%;
+}
+
+.tabs_tab {
+  width: auto;
+  height: 2em;
+  
+}
+
+.tei_tabs_main {
+  width: 70%;
+  border: 2px solid grey;
+  overflow-y: scroll;
+}
