@@ -1,3 +1,7 @@
+html {
+  background-color: darkgrey;
+}
+
 .tei_header {
   content: "";
   height: 25%;
@@ -7,22 +11,54 @@
 .tei_tabs {
   display: flex;
   flex-direction: row;
-  background-color: lightgrey;
 
+  padding: 2px;
 }
 
 .tei_tabs_tabs{
   width: 25%;
+  background-color: darkgrey;
+}
+.tei_tabs_tabs:hover {
+  background-color: lightgrey;
 }
 
 .tabs_tab {
   width: auto;
-  height: 2em;
-  
+  min-height: 2.5em;
+  max-height: 5em;
+  padding: 2px;
+  padding-left: 5%;
+
+  border: 1px solid grey;
+
+  display: flex;
+  align-items: center
+}
+
+.tabs_tab a {
+  text-decoration: none;
+  color: black;
+}
+
+.TBD {
+  color: grey !important;
+
+}
+
+
+
+/* use this border styling for the specific tab that is active on each page but more px */
+.tabs_tab:hover {
+  background-color: lightgreen;
+
+
+  border-right: 6px solid darkgrey;
+  border-left: 6px solid darkgrey;
 }
 
 .tei_tabs_main {
-  width: 70%;
-  border: 2px solid grey;
+  width: 100%;;
+  border: px solid grey;
   overflow-y: scroll;
 }
