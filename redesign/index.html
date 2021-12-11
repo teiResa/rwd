@@ -3,19 +3,56 @@
   <head>
     <meta charset="utf-8">
     <title>redesigned site</title>
+    <link rel="icon" href="../assets/teiResaHead.ico">
+
 
 
     <link rel="stylesheet" href="css/redesign.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Gaegu:wght@300;400&family=Stylish&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b9730a3ea0.js" crossorigin="anonymous"></script>
 
   </head>
   <body>
+    <header id="header">
+      <!--      FOR MOBILE ONLY
+          <div class="header-box">
+            <a class="popup_menu" id="nav-menu-icon" href="#nav_menu"><button type="button" name="button" class="button button-6"><i class="fa fa-bars" aria-hidden="true"></i></button></a>
+          </div>
+      -->
+          <div class="header-box">
+            <a href="https://teiresa.github.io/rwd2/landing.html">
+            <img id="header-img" src="../assets/teiResaHead.ico" alt="TeiResa Logo">
+            <!-- src="../../gallery/img/teiResa_body_82by103.png" -->
+            </a>
+          </div>
+          <div class="header-box">
+            <div class="site-info">
+                <h1 class="site-name"><a href="/">TechnicallyKeen</a></h1>
+                <p class="site-description">We all have to start somewhere.</p>
+            </div>
+          </div>
+          <div class="header-box">
+            <nav id="nav-bar">
+            <!--
+              <a class="nav-link" href="#lessons"><button type="button" name="button" class="button button-6">Lessons <div class="spin"></div> </button></a>
+              <a class="nav-link" href="#pricing"><button type="button" name="button" class="button button-6">Pricing</button></a>
+              <a class="nav-link" href="#inquire"><button type="button" name="button" class="button button-6">Inquire</button></a>
+            -->
+              <a class="popup_menu_icon" id="accessibility-menu-icon" title="accessibility menu" href="#accessibility_menu"><button type="button" name="button" class="button button-6"><i class="fa fa-universal-access" aria-hidden="true"></i></button></a>
+            </nav>
+          </div>
 
+        </header>
+
+        <!--
     <header class="tei_header">
       Empty for now...
       <hr>
     </header>
-
+  -->
 
     <!--
             The Font Awesome Icons used. (checked, unchecked, blank is in progress)
@@ -25,60 +62,60 @@
     -->
 
 
-    <div class="tei_tabs">
+    <div class="tei_page_contents">
         <aside class="tei_tabs_tabs">
-          <div class="tabs_tab"> <a href="#" title="Click to see my Responsive Web Design final projects"> <label for="">
-            <i class="fa fa-check-square-o" aria-hidden="true"></i>
-            Responsive Web Design  </a>   <!-- a or label's closing tag? -->
-          </div>
-          <div class="tabs_tab"> <a href="#" title="Click to see my Javascript final projects"> <label for="">
-            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-            JS Algorithms & Data Structures  </a>   <!-- a or label's closing tag? -->
-          </div>
-          <div class="tabs_tab"> <a href="#" title="Coming soon" class="TBD"> <label for="">
-            <i class="fa fa-square-o" aria-hidden="true"></i>
-            Front-End Dev Libraries  </a>   <!-- a or label's closing tag? -->
-          </div>
-          <div class="tabs_tab"> <a href="#" title="TBD" class="TBD"> <label for="">
-            <i class="fa fa-square-o" aria-hidden="true"></i>
-            Data Visualization  </a>   <!-- a or label's closing tag? -->
-          </div>
-          <div class="tabs_tab"> <a href="#" title="TBD" class="TBD"> <label for="">
-            <i class="fa fa-square-o" aria-hidden="true"></i>
-            Back-End Dev & APIs  </a>   <!-- a or label's closing tag? -->
-          </div>
-          <div class="tabs_tab"> <a href="#" title="TBD" class="TBD"> <label for="">
-            <i class="fa fa-square-o" aria-hidden="true"></i>
-            Quality Assurance  </a>   <!-- a or label's closing tag? -->
-          </div>
-          <div class="tabs_tab"> <a href="#" title="TBD" class="TBD"> <label for="">
-            <i class="fa fa-square-o" aria-hidden="true"></i>
-            Scientific Computing with Py  </a>   <!-- a or label's closing tag? -->
-          </div>
-          <div class="tabs_tab"> <a href="#" title=TBD" class="TBD"> <label for="">
-            <i class="fa fa-square-o" aria-hidden="true"></i>
-            Data Analysis with Py  </a>   <!-- a or label's closing tag? -->
-          </div>
-          <div class="tabs_tab"> <a href="#" title="TBD" class="TBD"> <label for="">
-            <i class="fa fa-square-o" aria-hidden="true"></i>
-            Information Security  </a>   <!-- a or label's closing tag? -->
-          </div>
-          <div class="tabs_tab"> <a href="#" title=TBD" class="TBD"> <label for="">
-            <i class="fa fa-square-o" aria-hidden="true"></i>
-            Machine Learning with Py  </a>   <!-- a or label's closing tag? -->
-          </div>
-          <div class="tabs_tab"> <a href="#" title="TBD" class="TBD"> <label for="">
-            <i class="fa fa-square-o" aria-hidden="true"></i>
-            Coding Interview Prep  </a>   <!-- a or label's closing tag? -->
-          </div>
-          <div class="tabs_tab "> <a href="#" title="Click this to see my certificates"> <label for="">
-            <i class="fas fa-graduation-cap"></i>
-            Certificates  </a>   <!-- a or label's closing tag? -->
-          </div>
-          <div class="tabs_tab"> <a href="#" title="Click this to see my favourites of the final projects"> <label for="">
-              <i class="fa fa-heart-o" aria-hidden="true"></i>
-              My Favourites </a>   <!-- a or label's closing tag? -->
-          </div>
+              <div class="tabs_tab"> <a href="#" title="Click to see my Responsive Web Design final projects"> <label for="">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                Responsive Web Design  </a>   <!-- a or label's closing tag? -->
+              </div>
+              <div class="tabs_tab"> <a href="#" title="Click to see my Javascript final projects"> <label for="">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                JS Algorithms & Data Structures  </a>   <!-- a or label's closing tag? -->
+              </div>
+              <div class="tabs_tab"> <a href="#" title="Coming soon" class="TBD"> <label for="">
+                <i class="fa fa-square-o" aria-hidden="true"></i>
+                Front-End Dev Libraries  </a>   <!-- a or label's closing tag? -->
+              </div>
+              <div class="tabs_tab"> <a href="#" title="TBD" class="TBD"> <label for="">
+                <i class="fa fa-square-o" aria-hidden="true"></i>
+                Data Visualization  </a>   <!-- a or label's closing tag? -->
+              </div>
+              <div class="tabs_tab"> <a href="#" title="TBD" class="TBD"> <label for="">
+                <i class="fa fa-square-o" aria-hidden="true"></i>
+                Back-End Dev & APIs  </a>   <!-- a or label's closing tag? -->
+              </div>
+              <div class="tabs_tab"> <a href="#" title="TBD" class="TBD"> <label for="">
+                <i class="fa fa-square-o" aria-hidden="true"></i>
+                Quality Assurance  </a>   <!-- a or label's closing tag? -->
+              </div>
+              <div class="tabs_tab"> <a href="#" title="TBD" class="TBD"> <label for="">
+                <i class="fa fa-square-o" aria-hidden="true"></i>
+                Scientific Computing with Py  </a>   <!-- a or label's closing tag? -->
+              </div>
+              <div class="tabs_tab"> <a href="#" title=TBD" class="TBD"> <label for="">
+                <i class="fa fa-square-o" aria-hidden="true"></i>
+                Data Analysis with Py  </a>   <!-- a or label's closing tag? -->
+              </div>
+              <div class="tabs_tab"> <a href="#" title="TBD" class="TBD"> <label for="">
+                <i class="fa fa-square-o" aria-hidden="true"></i>
+                Information Security  </a>   <!-- a or label's closing tag? -->
+              </div>
+              <div class="tabs_tab"> <a href="#" title=TBD" class="TBD"> <label for="">
+                <i class="fa fa-square-o" aria-hidden="true"></i>
+                Machine Learning with Py  </a>   <!-- a or label's closing tag? -->
+              </div>
+              <div class="tabs_tab"> <a href="#" title="TBD" class="TBD"> <label for="">
+                <i class="fa fa-square-o" aria-hidden="true"></i>
+                Coding Interview Prep  </a>   <!-- a or label's closing tag? -->
+              </div>
+              <div class="tabs_tab "> <a href="#" title="Click this to see my certificates"> <label for="">
+                <i class="fas fa-graduation-cap"></i>
+                Certificates  </a>   <!-- a or label's closing tag? -->
+              </div>
+              <div class="tabs_tab"> <a href="#" title="Click this to see my favourites of the final projects"> <label for="">
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                  My Favourites </a>   <!-- a or label's closing tag? -->
+              </div>
 
         </aside>
 

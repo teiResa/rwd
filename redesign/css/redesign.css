@@ -2,25 +2,125 @@ html {
   background-color: darkgrey;
 }
 
-.tei_header {
-  content: "";
-  height: 25%;
-  background-color: pink;
+a {
+  text-decoration: none;
 }
 
-.tei_tabs {
+/* ~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+#header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left:0;
+  grid-area: header;
+
+  height: 110px;
+  background-color: #f9ea8f55;
+  background-image: linear-gradient(313deg, #aff1da55 10%,  #f9ea8f 76%, #aff1da55 0%);
+  display: flex;
+  justify-content: space-evenly ;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 3;
+
+}
+
+.site-name {
+    margin: 0;
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Cute Font', cursive;
+    font-weight: 600;
+    font-size: 52px;
+    letter-spacing: 5px;
+    /* line-spacing: 2px; */
+    line-height: 1.7;
+    text-shadow: -1px -1px 0px #387543, 2px 2px 1px #fff, 4px 4px 2px #5e5ebb;
+}
+.site-name a {
+  text-decoration: none;
+  color: #333;
+}
+.site-description {
+  margin: -25px 0 0 0;
+  color: #666;
+  font-family: 'Gaegu', cursive;
+  font-size: 26px;
+}
+
+#header-img {
+  width: 80px;
+}
+#header-img:hover {
+  transform: rotate(-360deg);
+  transition: 640ms;
+}
+
+#nav-bar {
+  text-decoration: none;
+}
+
+#nav-bar button {
+  color: #6E60BC;
+  background: #aff1da00;
+  border: #aff1da;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+#nav-bar button:hover {
+  color: #387543;
+}
+
+#nav-link {
+  margin: 5px;
+  align-self: baseline;
+
+  text-decoration-line: none;
+  text-decoration-color: #A4060655;
+
+}
+
+.popup_menu_icon {
+  font-size: 40px;
+
+  position: absolute;
+    right: 20px;
+    top: 35px;
+    padding: 5px;
+}
+
+.popup_menu_icon:hover {    /* makes the icon spin. Weeeee. */
+  transform: rotate(360deg);
+  transition: 640ms;
+}
+
+#accessibility-menu-icon {}
+
+/* ~~~~~~~~~~ Everything between the header and footer ~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.tei_page_contents {
   display: flex;
   flex-direction: row;
 
   padding: 2px;
+  margin-top: 150px;
 }
+
+/* ~~~~~~~~~~ ASIDE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 
 .tei_tabs_tabs{
   width: 25%;
-  background-color: darkgrey;
+  background-color:#aff1da55;
 }
 .tei_tabs_tabs:hover {
-  background-color: lightgrey;
+  background-color: #aff1dabb;
 }
 
 .tabs_tab {
@@ -50,9 +150,9 @@ html {
 
 /* use this border styling for the specific tab that is active on each page but more px */
 .tabs_tab:hover {
-  background-color: lightgreen;
+  background-color: #f9ea8f;
 
-
+/* Border left and right need to match the background colour of HTML*/
   border-right: 6px solid darkgrey;
   border-left: 6px solid darkgrey;
 }
