@@ -1,0 +1,43 @@
+ In the Second World War, British spies used the first lines of poems as keys, which often made them easy to guess.
+
+ The history of encryption
+0 comments
+The need to obscure messages has been around almost as long as the process of writing. In this step, I am going to shine a light on the history of encryption. Knowing a bit about the background of encryption will help you better understand each specific method that we will look at later in the course.
+
+Ancient encryption
+An ancient Egyptian scribe sits at a table, writing on a parchment. In the background there are columns of hieroglyphs; a collection of symbols, animals and objects like bowls and scales.
+
+Researchers have found messages from Ancient Egypt where standard hieroglyphs were swapped for ones with non-standard meanings that could only be understood by someone who knew their obscure definition.
+
+The Spartan army are known to have used an encryption method called a scytale, which consisted of a rod and a strip of leather. The leather would be wrapped around the rod and then a message written across it. When unwound, the message did not line up and could not be read. The receiver would have a rod of exactly the same diameter and would wind the leather around it to reveal the original message.
+
+Julius Caesar hands a rolled up scroll to an army officer who is holding a spear with a sword on his belt.
+
+Perhaps the most famous ancient encryption scheme was used by Julius Caesar, called the Caesar cipher. This worked by substituting each letter in a message with another by moving down the alphabet. You will find out more about this scheme in the next step.
+
+Arabic scholars
+From around 800 AD, numerous Arabic scholars studied cryptographic techniques to test their security; this came to be known as cryptanalysis. Many of the techniques that these scholars pioneered are still used today.
+
+Al-Kindi sits on the floor making notes with a feather quill. A pile of books sits beside him and a bookshelf can be seen in the background.
+
+A technique used to break substitution ciphers (such as the Caesar cipher), called frequency analysis, was proposed in the 9th century by the mathematician Al-Kindi. Historians don’t know if people were able to break the Caesar cipher before this technique was developed, but the process became quite trivial afterwards.
+
+The secret life of French mathematicians
+The next chapter in this story starts in Italy in 1467, with an architect called Leon Battista Alberti. He devised a scheme that used a randomised substitution cipher with one important twist: he would change the substitution scheme in the middle of a message. He did this by placing a capital letter in the ciphertext to show that the change had been made, so that the decrypter would know to change their substitutions as well. Alberti’s cipher is one of the earliest forms of polyalphabetic ciphers (ciphers that used more than one substitution alphabet). These ciphers were harder to crack with traditional cryptanalytic techniques like frequency analysis.
+
+Following on from Alberti’s work, Blaise de Vigenère created a polyalphabetic cipher that bears his name, the Vigenère cipher. The Vigenère cipher was first documented in 1553 and is thought to have remained unbroken until 1854. It was referred to as “the unbreakable cipher” by many, including mathematician Charles Lutwidge Dodgson, also known by his pen name Lewis Carroll. This method of encryption was used by British spies in the Second World War.
+
+The French royals had a keen interest in cryptography, and for several generations, one family served as their principal cryptographers. Some time after 1628, the Rossignols developed the Great Cipher, which substituted syllables for numbered codes. This scheme was called ‘Great’ because it was thought to be unbreakable, and it remained so until 1890.
+
+Encryption machines
+A huge development in the 20th century was the advent of cipher machines. These helped to automate the process of encryption and could be configured to implement more complex and varied substitutions, leading to stronger encryption.
+
+One of the most well-known machines is the Enigma machine that was used by German forces in the Second World War. This machine looks a bit like a typewriter, with a keyboard and a display of light bulbs that each correspond to a character. Pressing a button on the keyboard causes a light bulb to light up, and the pattern of light bulbs can be written down as the ciphertext.
+
+circuit diagram of an enigma machine, showing three rotors in the middle with a reflector to the left and an entry drum to the right, in front of this is a plugboard which leads into a lightboard and keyboard
+
+You can read more about the Enigma machine and other types of encryption machine here.
+
+Nowadays it is very rare to see any form of encryption that is done by hand. Today it is a job for the algorithm machines that store our information and handle our communication.
+
+Claude Shannon published a series of papers in 1945 defining a new age of encryption, in which attackers had the same tools as the defenders. He introduced the idea of perfect security — encryption that could not be broken even with infinite resources — and computational security where resources are finite. You will investigate these concepts later in the week.
