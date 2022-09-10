@@ -61,3 +61,39 @@ The encryption algorithm takes your plaintext and a key as inputs and will outpu
 The decryption algorithm takes the key and ciphertext as inputs and will output a plaintext.
 
 The specific key used should be kept secret so that only the intended recipients can open the message.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.10
+True randomness can be achieved only if the computer can take a measurement from some external physical phenomenon and use it as part of its generator algorithm. For example, a sensor could be used to measure the nuclear decay of an atom or the random movements inside a lava lamp. These values are called nondeterministic in that they cannot be predicted.
+
+Stream ciphers
+A stream cipher is one where the plaintext is encrypted one bit at a time. Plaintext bits are combined with a pseudorandom stream of bits called a keystream. Typically, the combining operation is the XOR operation that you learned about in the previous step.
+
+The keystream is generated from a random seed value and this seed value is the cryptographic key that the receiving device needs to recreate the keystream and decrypt the ciphertext. The length of the seed value is typically 128 bits.
+
+The keystream can be recreated if someone gets hold of the seed value, so stream ciphers are not perfectly secure. However, stream ciphers are widely used and they are very useful where the length of the plaintext is not known in advance, such as in wireless communication systems.
+
+Block ciphers
+In a block cipher, the message is broken into blocks containing multiple bits that are then encrypted. If the block length is longer than the message that needs to be encrypted, the message is padded with random content to make it longer.
+
+Block ciphers can help to obscure the length of your message because each block is uniform in length. This means that an attacker can see how many blocks your message is encrypted into, but not the exact length of the message. However, they require more memory to use and are slower to implement than a stream cipher.
+
+Because block ciphers encrypt data in blocks, you can add additional information to a message to indicate whether it has been decrypted properly. This allows the receiver to verify the authenticity of the message, which is something that they cannot do with a stream cipher.
+
+Implementations of the block cipher are based on a protocol called the Feistel cipher. You can read more about the Feistel cipher here.
