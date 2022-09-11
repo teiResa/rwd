@@ -5,6 +5,8 @@ source: Futurelearn
 
 To be moved to the notebooks when i remember where it is. I made an html one, and a js one, and a ux one... but i am too lazy to look for it.
 
+Take jot notes and make summaries before adding to site when you do find it.
+
 
 ~~~~~~~~~
 
