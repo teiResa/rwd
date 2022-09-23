@@ -1,0 +1,79 @@
+Cryptography
+
+"The art of writing or solving codes." 		- Oxford English Dictionary
+
+Modernly --> A system for ensuring integrity, techniques used for exchanging secret keys, protocols for authenticating users, electronic auctions and elections, digital cash, and more.
+
+The study of scientific methods for securing digital information, systems, and dispersed calculations against attacks.
+
+Cryptography - The science of generating cryptosystems, which are secured for converting plaintext into ciphertext.
+
+Cryptosystem - Developed using certain decryption and encryption algorithms.
+
+Cryptographer - develops the cryptosystem.
+
+Cryptanalysis - Attacking a system, finding weaknesses, and disclosing the weakness.
+
+Encryption - Convert plaintext to ciphertext.
+
+Decryption - Convert ciphertext to plaintext.
+
+Kerckhoff's Principle - General principle of modern Cryptography. The algorithms, which are used to define a cryptosystem, should be made available to the public. By doing so, cryptosystems will be critically analysed by cryptographers, so that users can have confidence in it.
+
+Key - used to encrypt/decrypt the plaintext. Only those with the key can decrypt the cipher. 
+
+Secret Key - Another name for the key.
+
+Cryptographic Hash Function - used to compress a bulky message length to a short random-looking, fixed-length message digest (Is the same thing as ciphertext?). Used to find collisions. 
+
+Hash Function - Hash functions are public functions (can be known by everybody). They are only used to produce collisions. They are used to create fingerprints of some data. Then, if that data is modified, the fingerprint is modified, therefore the data no longer has integrity.
+
+Why can Hash functions not be used for Cryptography?
+- They do not have a key.
+- They are not invertible.
+
+Cryptographic Algorithms - Algorithms used for vital tasks such as authentication, encryption, and digital signatures.
+
+Plaintext + _________ = Ciphertext
+
+_________ + the key = Ciphertext
+
+Plaintext + secret key = _________
+
+Algorithms - A group of distinct but complex mathematical instructions that are used for encrypting and decrypting data.
+
+Cryptographic Algorithms (I.O.T.) - A method to ensure privacy protection. These algorithms rely on randomly generated numbers in order to operate securely.
+
+Cryptographic Algorithms are decided into two categories, __________ and _________ .    (block and steam)
+
+Block or Steam Cipher?
+
+B - Regularly used in symmetric key encryption.
+B - Function on a fixed-length segment if plaintext.
+B - Data is divided into blocks, then encrypted using a substitution cipher method.
+B- If the message is only 145 of 160, the last 15 spots are given filler to make the message always a perfect 160 characters.
+
+S - Applied to single bits of data.
+S - Data is encrypted with a key to produce a stream of digits and plaintext digits.
+
+
+Symmetric Encryption 
+- Another name for 'Secret Key' Encryption
+- The Caesar, VigenÃ©re, and Vernam Ciphers are examples of ____S_____ encryption schemes.
+- One key is used for both encrypting and decrypting.
+- ______s____ (Symmetric/Asymmetric) encryption is achieved by means of a _____b_____ (block/steam) cipher.
+- (T/F) F - The objects interacting through symmetric encryption do not need to exchange the key that would be used to decrypt the message.
+- (T/F) T - The message can only be understood by someone with the key.
+- These are examples of Symmetric: DES, AES, IDEA, Blowfish.
+
+
+Asymmetric Encryption 
+- Another name for 'Public Key' Cryptography.
+- There two keys: public and private.
+- Examples of Asymmetric encryption: PKCS, HTTPS, SSL
+
+
+
+FINISH ASYMMETRIC ENCRYPTION AND PKI
+
+~~~~~~~~~~~~~~~~~
