@@ -96,6 +96,10 @@ FOR IF I EVER DECIDE TO GRADIENT THE FCC FONTAWESOME FONT (IT IS THE GRADIENT FO
 
 background: rgb(247,231,246);
 background: linear-gradient(90deg, rgba(247,231,246,1) 15%, rgba(252,234,255,1) 30%, rgba(246,222,250,1) 50%, rgba(252,234,255,1) 70%, rgba(247,231,246,1) 85%);
+
+
+also, i like the font 
+EuclidCircularB,sans-serif
 */
 
 
@@ -121,7 +125,8 @@ background: linear-gradient(90deg, rgba(162,116,169,1) 0%, rgba(104,74,109,1) 15
  }
 
  .header img {
-  margin: 0 22vw;
+  /*
+  margin: 0 22vw; */
   width:100%;
   max-width: 250px;
   height: auto;
