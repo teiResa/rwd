@@ -12,9 +12,17 @@ body {
  text-align: center;
  text-transform: uppercase;
  padding: 32px;
- background-color: #5a405e;
+ background: rgb(162,116,169);
+background: linear-gradient(90deg, rgba(162,116,169,1) 0%, rgba(104,74,109,1) 24%, rgba(90,64,94,1) 35%, rgba(90,64,94,1) 50%, rgba(90,64,94,1) 65%, rgba(104,74,109,1) 76%, rgba(162,116,169,1) 100%);
+ /*
+background-color: #5a405e;
+ background: rgb(90,64,94);
+background: radial-gradient(circle, rgba(90,64,94,1) 0%, rgba(105,75,110,1) 22%, rgba(162,116,169,1) 66%, rgba(219,158,229,1) 100%);
+ 
+
+ */
  color: #fff;
- border-bottom: 8px groove #db9ee5;
+ border-bottom: 1px dashed #a073a7;
 }
 
 .header img {
@@ -43,7 +51,13 @@ body {
  max-width: 1400px;
  margin: 0 auto;
  padding: 20px 10px;
+
+ background: rgb(247,231,246);
+background: linear-gradient(90deg, rgba(247,231,246,1) 15%, rgba(252,234,255,1) 30%, rgba(246,222,250,1) 50%, rgba(252,234,255,1) 70%, rgba(247,231,246,1) 85%);
+
+ /*
  background-color: hsl(292, 58%, 90%);
+ */
 }
 
 .gallery img {
@@ -68,4 +82,52 @@ body {
  font-size: 15px;
  padding: 5px 6px;
  text-transform: initial;
+}
+
+
+
+
+
+
+
+/*
+.header {
+ text-align: center;
+ text-transform: uppercase;
+ padding: 32px;
+ background: rgb(162,116,169);
+background: linear-gradient(90deg, rgba(162,116,169,1) 0%, rgba(104,74,109,1) 5%, rgba(90,64,94,1) 15%, rgba(90,64,94,1) 50%, rgba(90,64,94,1) 85%, rgba(104,74,109,1) 95%, rgba(162,116,169,1) 100%);
+ color: #fff;
+ border-bottom: 1px dashed #a073a7;
+}
+*/
+
+
+
+
+
+@media screen and (max-width: 880px) {
+ .header{
+  background: rgb(162,116,169);
+background: linear-gradient(90deg, rgba(162,116,169,1) 0%, rgba(104,74,109,1) 15%, rgba(90,64,94,1) 25%, rgba(90,64,94,1) 50%, rgba(90,64,94,1) 75%, rgba(104,74,109,1) 85%, rgba(162,116,169,1) 100%);
+ }
+}
+
+@media screen and (min-width: 2000px) {
+
+}
+
+@media  screen and (max-width: 470px) {
+ .header {
+  background: none;
+  background-color: #5a405e;
+  border-bottom: 1px dashed #a073a7;
+ }
+
+ .header img {
+  margin: 0 22vw;
+  width:100%;
+  max-width: 250px;
+  height: auto;
+ }
 }
