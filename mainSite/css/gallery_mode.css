@@ -17,6 +17,12 @@ body {
  border-bottom: 8px groove #db9ee5;
 }
 
+.header img {
+ width: 30vw;
+ min-width: 250px;
+ max-width: 500px;
+}
+/*
 .header .fa {
  color: hsl(292, 58%, 80%);
 }
@@ -24,6 +30,8 @@ body {
 .header span, small {
  color: #8b6491;
 }
+
+*/
 
 .gallery {
  display: flex;

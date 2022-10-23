@@ -6,7 +6,7 @@ https://sebhastian.com/html-hover-text/
 
 .hovertext {
  position: relative;
- border-bottom: 1px dotted black;
+ /*border-bottom: 1px dotted black;*/
 }
 
 .hovertext:before {
