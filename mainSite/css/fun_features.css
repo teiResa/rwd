@@ -31,3 +31,27 @@ https://sebhastian.com/html-hover-text/
  opacity: 1;
  visibility: visible;
 }
+
+
+
+
+
+/* ACCESSIBILITY SECTION  ~ make own stylesheet to automatically add to things once there is more to it*/
+
+.sr-only {
+ position: absolute;
+ width: 1px;
+ height: 1px;
+ padding: 0;
+ margin: -1px;
+ overflow: hidden;
+ clip: rect(0, 0, 0, 0);
+ white-space: nowrap;
+ border: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+ * {
+ scroll-behavior: smooth;
+}
+}
