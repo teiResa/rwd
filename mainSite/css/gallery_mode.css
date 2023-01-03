@@ -52,13 +52,20 @@ background: radial-gradient(circle, rgba(90,64,94,1) 0%, rgba(105,75,110,1) 22%,
  margin: 0 auto;
  padding: 20px 10px;
 
- background: rgb(247,231,246);
+ background: rgba(250, 223, 249, 0.598);
+
+ /*
 background: linear-gradient(90deg, rgba(247,231,246,1) 15%, rgba(252,234,255,1) 30%, rgba(246,222,250,1) 50%, rgba(252,234,255,1) 70%, rgba(247,231,246,1) 85%);
+*/
 
  /*
  background-color: hsl(292, 58%, 90%);
  */
 }
+
+#embedim--shape{ z-index:-9999999; }
+.modal-backdrop { z-index: -1050; }
+.modal-backdrop.show { z-index: -1049; } 
 
 .gallery img {
  width: 100%;
