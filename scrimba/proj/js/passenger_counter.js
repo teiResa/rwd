@@ -85,10 +85,13 @@ function increment() {
 let count = 0
 let countEl = document.getElementById("count-el")
 console.log(countEl)
+let saveEl = document.getElementById("save-el")
+console.log(saveEl)
 
 function increment() {
  // console.log("button works")
- count = count + 1
+ //count = count + 1
+ count += 1
  countEl.innerText = count
 
  console.log(count)
@@ -96,21 +99,44 @@ function increment() {
 
 function save() {
  console.log(count)
+ let saveCount = count + " - "
+ saveEl.innerText += saveCount
 }
+//calling it a night
 
 
 // document.getElementById("count-el").innerText = count
 
 
-
-
-
+/*
 let username = "per"
 let message = "You have three new notifications"
 let messageToUser = message + ", " + username + "."
 console.log(messageToUser)
+*/
+
+// let username = "Seymour Peemour"
+// string > number, so if you force a number to concatinate with a string, the number becomes a string too.
+let username = 42
+let greeting = "Hi, I love you, "
+let myGreeting = greeting + username
+console.log(myGreeting)
+
+/*
+let points = 4
+let bonusPoints = "10"
+// if bonusPoints = "10" the numbers within the quotations is a string, so the whole thing becomes at concationation would be a string. String always wins. 
+let totalPoints = points + bonusPoints
+
+console.log(totalPoints)
 
 
+console.log(4 + 5) // returns: 9 as a number datatype
+console.log("2" + "4") //returns: 24 as a string datatype
+console.log("5" + 1) //returns: 51 as a string datatype
+console.log(100 + "100") //returns: 100100 as a string datatype
+
+*/
 
 
 
