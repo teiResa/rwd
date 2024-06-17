@@ -1,0 +1,26 @@
+h1 {
+ margin: 10px 0px;
+}
+
+h2 {
+ font-size: 50px;
+ margin: 0 0 10px 0;
+}
+
+button {
+ border: none;
+ padding: 10px 0;
+ color: white;
+ font-weight: bold;
+ width: 200px;
+ margin: 0 0 5px 0;
+ border-radius: 5px;
+}
+
+#increment-btn {
+ background: darkred;
+}
+
+#save-btn {
+ background: darkgreen;
+}
