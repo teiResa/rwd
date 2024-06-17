@@ -102,8 +102,7 @@ function save() {
  let saveCount = count + " - "
  saveEl.innerText += saveCount
 }
-//calling it a night
-
+//calling it a night ... this is where I left off (" https://v2.scrimba.com/learn-javascript-c0v/~0r ")
 
 // document.getElementById("count-el").innerText = count
 
