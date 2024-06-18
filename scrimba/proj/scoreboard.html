@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Scoreboard</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/scoreboard.css">
+</head>
+<body>
+
+ <div class="container nunito-font">
+  <div id="top"><div class="halves">
+   <h3>HOME</h3>
+   <div><span id="home-score"> 0 </span></div>
+   <div class="buttons-div">
+    <button class="plus-points" onclick="homePlusOne()"> +1 </button>
+    <button class="plus-points" onclick="homePlusTwo()"> +2 </button>
+    <button class="plus-points" onclick="homePlusThree()"> +3 </button>
+   </div>
+   
+  </div>
+  <div class="halves">
+   <h3>GUEST</h3>
+   <div><span id="guest-score"> 0 </span></div>
+   <div class="buttons-div">
+    <button class="plus-points" onclick="guestPlusOne()"> +1 </button>
+    <button class="plus-points" onclick="guestPlusTwo()"> +2 </button>
+    <button class="plus-points" onclick="guestPlusThree()"> +3 </button>
+   </div>
+
+  </div></div>
+  <div id="bottom">
+   <button onclick="reset()" id="reset-btn"> RESET </button>
+  </div>
+  
+
+
+ </div>
+ <script src="js/scoreboard.js"></script>
+</body>
+</html>
