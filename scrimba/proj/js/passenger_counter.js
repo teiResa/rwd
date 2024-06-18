@@ -1,5 +1,9 @@
 /* 2024-06-17  following the Scrimba course ( https://v2.scrimba.com/learn-javascript-c0v/~07 ) to prepare to resume the FreeCodeCamp course. I finally have access again. */
 
+/*
+ Mixing HTML structure and JS functionality can lead to code that is hard to maintain and manage. Using HTML's onclick is intuitive, however  there is a better way.
+*/
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // document.getElementById("count").innerText = 5
 
 /*
@@ -92,7 +96,7 @@ function increment() {
  // console.log("button works")
  //count = count + 1
  count += 1
- countEl.innerText = count
+ countEl.textContent = count
 
  console.log(count)
 }
@@ -100,7 +104,11 @@ function increment() {
 function save() {
  console.log(count)
  let saveCount = count + " - "
- saveEl.innerText += saveCount
+ //was .innerText, but it is resource wasteful, and only shows human-readable content. Nothing hidden, so no un-sandwiched spaces.
+ saveEl.textContent += saveCount
+
+ count = 0
+ countEl.textContent = 0
 }
 //calling it a night ... this is where I left off (" https://v2.scrimba.com/learn-javascript-c0v/~0r ")
 

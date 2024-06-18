@@ -1,5 +1,5 @@
 body {
- background-image: url("station.jpg");
+ background-image: url("yarn02.jpg");
  background-size: cover;
  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  font-weight: bold;
@@ -16,7 +16,11 @@ body {
    font-style: normal;
  }
 h1 {
- background-color: #ffed61bd ; /* JS yellow */
+ background-color: #ffdbce;
+ color: #beecea;
+ text-shadow: 1px 1px 1px #66927c;
+ /*
+ background-color: #ffed61bd ;  JS yellow */
  align-content: center;
 }
 
@@ -40,9 +44,25 @@ button {
 }
 
 #increment-btn {
- background: darkred;
+ background: #cc7c77;
+ text-shadow: 1px 1px 1px #7f7f7f;
 }
 
 #save-btn {
- background: rgb(79, 121, 79);
+ background: #66927c;
+ text-shadow: 1px 1px 1px #989898;
+}
+
+.soft-text {
+ color: #606060e1;
+}
+
+.prev-rows {
+ display: flex;
+ margin: 5px;
+}
+
+.prev-rows p {
+ margin: 5px;
+ min-width: 120px;
 }

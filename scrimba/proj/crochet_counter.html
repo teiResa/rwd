@@ -8,21 +8,30 @@
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="css/passenger_counter.css">
+ <link rel="stylesheet" href="css/crochet_counter.css">
 </head>
 <body class="nunito-font">
  <header>
- <h1>Counter APP</h1>
+ <h1>Crochet Counter</h1>
   </header>
  
- <h2>Passengers:</h2>
+ <h2>Stitches:</h2>
  <h3 id="count-el" >0</h3>
 
  <button id="increment-btn" onclick="increment()">INCREMENT</button>
- <button id="save-btn" onclick="save()"> SAVE </button>
- <p id="save-el"> Previous entries: &nbsp;</p>
- <p>Counter restarts at 0 automatically at save.</p>
-<script src="js/passenger_counter.js"></script>
+ <button id="save-btn" onclick="save()"> SAVE ROW </button>
+ <div class="soft-text prev-rows">
+
+  <p>Previous Rows:</p>
+<p id="save-el">&nbsp;</p>
+
+ </div>
+ 
+
+ <h2>Rows:</h2>
+ <h3 id="rows-el">0</h3>
+ <p class="soft-text">Counter restarts at 0 automatically at save.</p>
+<script src="js/crochet_counter.js"></script>
 </body>
 
 </html>
