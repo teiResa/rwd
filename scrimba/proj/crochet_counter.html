@@ -11,9 +11,10 @@
  <link rel="stylesheet" href="css/crochet_counter.css">
 </head>
 <body class="nunito-font">
- <header>
+ <div id="max-frame">
+ <div id="header">
  <h1>Crochet Counter</h1>
-  </header>
+  </div>
  
  <h2>Stitches:</h2>
  <h3 id="count-el" >0</h3>
@@ -22,15 +23,15 @@
  <button id="save-btn" onclick="save()"> SAVE ROW </button>
  <div class="soft-text prev-rows">
 
-  <p>Previous Rows:</p>
+  <p style="font-weight: 700;">Previous Rows:</p>
 <p id="save-el">&nbsp;</p>
 
  </div>
- 
-
  <h2>Rows:</h2>
  <h3 id="rows-el">0</h3>
- <p class="soft-text">Counter restarts at 0 automatically at save.</p>
+ <p class="soft-text">Counter restarts at 0 automatically at save.<br> The most recent row is saved <i>at the end</i> of the list. </p>
+
+</div>
 <script src="js/crochet_counter.js"></script>
 </body>
 

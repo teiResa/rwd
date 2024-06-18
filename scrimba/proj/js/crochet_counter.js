@@ -8,11 +8,8 @@
 let count = 0
 let rows = 0
 let countEl = document.getElementById("count-el")
-console.log(countEl)
 let saveEl = document.getElementById("save-el")
-console.log(saveEl)
 let rowsEl = document.getElementById("rows-el")
- console.log(rowsEl)
 
 function increment() {
  // console.log("button works")
@@ -27,6 +24,10 @@ function save() {
  console.log(count)
  let saveCount = count + " - "
  //was .innerText, but it is resource wasteful, and only shows human-readable content. Nothing hidden, so no un-sandwiched spaces.
+// look into reversing a string...
+
+
+
  saveEl.textContent += saveCount
 
  count = 0
@@ -34,8 +35,8 @@ function save() {
 
  // When saved, also count how many times the save button has been clicked
 
- console.log("number of rows" + rowsEl)
+ 
   rows += 1
   rowsEl.textContent = rows
- 
+ console.log("number of rows:" + rows)
 }
