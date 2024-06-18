@@ -62,13 +62,24 @@ body {
   width: 30px;
   margin-bottom: 5px;
  }
+ button:hover {
+  color: #c398a5;
+  background-color: #8cf1ca;
+  border: 2px #c398a5 solid;
+ }
 
  #reset-btn {
   color:#8cf1ca;
   background-color: #c398a5;
-  border:#c398a5;
+  border: 2px solid #c398a5;
   padding: 5px 22px;
   width: 80px;
+ }
+
+ #reset-btn:hover {
+  color:#8cf1ca;
+  background-color: #c398a5;
+  border:2px solid #8cf1ca;
  }
 
  h3 {
