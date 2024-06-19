@@ -2,9 +2,9 @@ let firstCard = 5
 let secondCard = 7
 //let thirdCard = 9 //9
 
-let cards = [firstCard, secondCard ] //array - ordered list of items
+let cards = [firstCard, secondCard] //array - ordered list of items
 
-let userAge = 21
+// let userAge = 21
 let hasBlackJack = false
 let isAlive = true
 let message = ""  //an empty string
@@ -20,11 +20,20 @@ function startGame() {
 }
 
 function renderGame() {
- sumEl.textContent = "Sum: " + sum
+
  //cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
- cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
+ //cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
+ for (let i = 0; i < cards.length; i++) {
+  cardsEl.textContent += cards[i] + " "
+  //console.log(cards)
+ }
+
+
+
+ sumEl.textContent = "Sum: " + sum
+
 console.log("start button clicked")
-if (sum < 21) {
+if (sum < 21) { //   <= 20
   message = "Another card?" //😁
 } else if (sum === 21) {
   message = "Congratulations! Blackjack!" //😎🎆
@@ -33,16 +42,16 @@ if (sum < 21) {
  message = "Lost. Another round? " //💀
  isAlive = false
 }
-console.log(message)
 messageEl.textContent = message
 }
 
+/*
 if (userAge >= 21) {
  console.log("🍀 Good luck, Player! 🤞🏻")
 } else {
  console.log("🤖Players must be 21 years or older. Admittance denied.🤖")
 }
-
+*/
 
 /*
 let oldAge = 100
@@ -76,6 +85,5 @@ function newCard () {
   sum += thirdCard
   cards.push(thirdCard)
   console.log(cards)
-    
   renderGame()
 }
