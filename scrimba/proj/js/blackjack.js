@@ -1,6 +1,8 @@
 let firstCard = 5
 let secondCard = 7
-let thirdCard = 9 //9
+//let thirdCard = 9 //9
+
+let cards = [firstCard, secondCard ] //array - ordered list of items
 
 let userAge = 21
 let hasBlackJack = false
@@ -11,12 +13,17 @@ let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
 
-let sum = firstCard + secondCard + thirdCard
+let sum = firstCard + secondCard
 
 function startGame() {
+ renderGame()
+}
+
+function renderGame() {
  sumEl.textContent = "Sum: " + sum
- cardsEl.textContent = "Cards: " + firstCard + " " + secondCard + " " + thirdCard
-console.log("button clicked")
+ //cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
+ cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
+console.log("start button clicked")
 if (sum < 21) {
   message = "Another card?" //😁
 } else if (sum === 21) {
@@ -55,3 +62,20 @@ console.log("cards alive?" + "    " + isAlive)
 
 
 // f t f f t t f
+
+function newCard () {
+  console.log("nc poushed")
+  let thirdCard = 9 //9
+
+  /* This part would have been cleaner~~~~~~~~~
+  sum = firstCard + secondCard + thirdCard
+
+  This part was not DRY (Don't repeat yourself ~~~~~~~~~~~)
+  sumEl.textContent = "Sum: " + sum
+  */
+  sum += thirdCard
+  cards.push(thirdCard)
+  console.log(cards)
+    
+  renderGame()
+}
