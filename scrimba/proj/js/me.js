@@ -44,5 +44,6 @@ console.log(messages)
 //        START         STOP         STEP
 for (let count = 1; count < 11; count =+1){
  //starting at 1, stop before 11 (runs ten times), counting by ones
- console.log(count)
+ 
 }
+
