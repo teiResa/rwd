@@ -1,9 +1,8 @@
 let firstCard = 5
 let secondCard = 7
 //let thirdCard = 9 //9
-
 let cards = [firstCard, secondCard] //array - ordered list of items
-
+let sum = firstCard + secondCard
 // let userAge = 21
 let hasBlackJack = false
 let isAlive = true
@@ -13,26 +12,27 @@ let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
 
-let sum = firstCard + secondCard
 
 function startGame() {
  renderGame()
 }
 
 function renderGame() {
+   cardsEl.textContent = "Cards: "
+    //  ^^^^ this line clears the cards on re-render
 
  //cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
  //cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
  for (let i = 0; i < cards.length; i++) {
   cardsEl.textContent += cards[i] + " "
-  //console.log(cards)
+  console.log(cards)
  }
 
 
 
  sumEl.textContent = "Sum: " + sum
 
-console.log("start button clicked")
+//console.log("start button clicked")
 if (sum < 21) { //   <= 20
   message = "Another card?" //😁
 } else if (sum === 21) {
