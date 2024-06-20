@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Dice</title>
+</head>
+<body>
+
+ <button id="roll-el" onclick="rollDice()">Roll a dice</button>
+
+ <span id="show-el"> |=| </span>
+
+ 
+ <script>
+
+function rollDice() {
+ let randoNum = Math.floor(Math.random() * 6) + 1
+ return randoNum
+}
+// browser's dev tool's console. F5 because button no worky
+console.log( rollDice() )
+/*
+let showEl = document.getElementById("show-el")
+let dandom = rollDice()
+
+showEl.textContent = dandom
+*/
+
+ //function declarations get "hoisted", so they are available to the entire js document, even line 1.
+ //the JavaScript interpreter splits the declaration and assignment of variables and functions: it "hoists" the declarations to the top of their scope, but leaves the assignments where they are
+ //math.random() generates a pseudo-random number between 0 and 1 (not including 1, as in 1.0; 0.000 continued -> 0.999 continued)
+ // math.random() * 6 (0.000 -> 5.999)
+ // the multiplier is what dictates the highest end of the range.
+ // math.floor() [positive numbers only here, but it works too] removes the decimal, so it is a whole number instead of a decimal, i think.
+ // math.floor(math.random) ???? Close.
+
+ // let randomNumber = Math.floor(Math.random() * 6)
+ // 6 sided dice:
+ //let randomNumber = Math.floor(Math.random()*6) + 1
+ // the + 1 makes upgrades it from 0-5 to 1-6
+
+ let hasSolvedChallenge = false
+ let hasHintsLeft = true
+
+ // && and; || or
+
+ if (hasSolvedChallenge === false && hasHintsLeft === false) showSolution()
+
+ function showSolution() {
+  console.log("showing solution...")
+ }
+
+ let likesDocumentaries = true
+ let likesStartups = true
+
+ if (likesDocumentaries === true || likesStartups === true) recommentMovie()
+
+ function recommentMovie() {
+  console.log("Check out the Fyre fesival documentary!")
+ }
+
+ let myCastle = {
+  name: "Live like a King in my Castle",
+  price: 190,
+  rooms: ["4 guests", "1 bedroom", "2 beds", "private half-beach"],
+  stars: 4.95,
+  location: "Galway",
+  available: true,
+  superhost: true,
+  castle: true
+ }
+
+ 
+ console.log(myCastle.rooms)
+ console.log(myCastle.price)
+
+
+
+
+
+ </script>
+</body>
+</html>

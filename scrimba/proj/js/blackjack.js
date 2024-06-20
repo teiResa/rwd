@@ -1,25 +1,72 @@
-let firstCard = 5
-let secondCard = 7
+let player = {
+ name: "Theresa",
+ chips: 69420
+}
+
+let cards = [] // an empty array
+//let cards = [firstCard, secondCard] //array - ordered list of items
+let sum = 0
+// let userAge = 21
+let hasBlackJack = false
+let isAlive = false
+let message = ""  //an empty string
+let messageEl = document.getElementById("message-el")
+let sumEl = document.getElementById("sum-el")
+let cardsEl = document.getElementById("cards-el")
+let playerEl = document.getElementById("player-el")
+
+playerEl.textContent = player.name + ": " + "€" + player.chips
+
+
+console.log(cards)
+
+
+function getRandomCard() {
+ // ace is 11, but you can make it both 1 and 11 later.
+ let randomNumber = Math.floor(Math.random() * 13) + 1
+
+ if ( randomNumber >= 11 ) {
+  return 10
+ } else if ( randomNumber === 1 ){
+return  11
+ }else {
+ return randomNumber 
+ }
+  
+ 
+}
+/*
+function rollDice() {
+ let randoNum = Math.floor(Math.random() * 6) + 1
+ console.log(randoNum)
+}
+
+*/
+
+function startGame() {
+ isAlive = true
+
+ let firstCard = getRandomCard()
+ let secondCard = getRandomCard()
+ cards = [firstCard, secondCard]
+ sum = firstCard + secondCard
+
+renderGame()
+/*
+ let firstCard = getRandomCard()
+let secondCard = getRandomCard()
 //let thirdCard = 9 //9
 let cards = [firstCard, secondCard] //array - ordered list of items
 let sum = firstCard + secondCard
 // let userAge = 21
 let hasBlackJack = false
 let isAlive = true
-let message = ""  //an empty string
-let messageEl = document.getElementById("message-el")
-let sumEl = document.getElementById("sum-el")
-let cardsEl = document.getElementById("cards-el")
-
-
-
-function startGame() {
- renderGame()
+*/
 }
 
 function renderGame() {
    cardsEl.textContent = "Cards: "
-    //  ^^^^ this line clears the cards on re-render
+    //  ^^^^ this line clears the cards on re-render so it just says the label part
 
  //cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
  //cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
@@ -74,7 +121,7 @@ console.log("cards alive?" + "    " + isAlive)
 
 function newCard () {
   console.log("nc poushed")
-  let thirdCard = 9 //9
+  let thirdCard = getRandomCard()
 
   /* This part would have been cleaner~~~~~~~~~
   sum = firstCard + secondCard + thirdCard
@@ -82,8 +129,13 @@ function newCard () {
   This part was not DRY (Don't repeat yourself ~~~~~~~~~~~)
   sumEl.textContent = "Sum: " + sum
   */
-  sum += thirdCard
-  cards.push(thirdCard)
-  console.log(cards)
-  renderGame()
+
+  // is alive and does not have blackjack
+  if (isAlive === true && hasBlackJack === false) {
+        sum += thirdCard
+        cards.push(thirdCard)
+        console.log(cards)
+        renderGame()
+  }
+ 
 }

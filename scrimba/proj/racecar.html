@@ -21,6 +21,8 @@
  let welcomeEl = document.getElementById('welcome-el')
  let uname = "Seymour Peemour"
  let greeting = "welcome back"
+ let player1Time = 102
+ let player2Time = 107
 
  welcomeEl.innerText = greeting + " " + uname
 
@@ -73,8 +75,6 @@
 
 
 
-
-
  // Set up the race
  countdown()
 
@@ -82,9 +82,40 @@
  // Players are racing
  // Race has ended
 
- //get ready for a new race
- countdown()
+ 
+ function getFastestRaceTime() {
+   if (player1Time < player2Time) {
+    return player1Time
+    // return -- because it is better for this purpose to not use console.log, instead create a variable so you can actually use this data.
+   } else if (player2Time < player1Time) {
+    return player2Time
+   } else {
+    return player1Time
+   }
+  }
 
+  
+
+  let fastestRace = getFastestRaceTime()
+  console.log(fastestRace)
+
+
+
+function getTotalRaceTime() {
+ return player1Time + player2Time
+}
+let totalTime = getTotalRaceTime()
+
+console.log(totalTime)
+
+
+
+
+ //get ready for a new race
+/*
+ console.log("Ready for next race?")
+ countdown()
+*/
 
 </script>
 </html>
