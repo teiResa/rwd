@@ -108,10 +108,81 @@ body {
  <div>
   <h2> Recap #1</h2>
   <div>
-   hellow
-   <details>
+   <ul>
+    <li> The script tag
+     <details>
+      <ul>
+       <li> Inline: on the html</li>
+       <li> External: using src to connect to the html </li> </ul> </details> </li>
+    <li></li>
+   </ul>
 
-   </details>
+   <h3> Variables </h3>
+   <p class="code"> let apples = 3 <br> let countEl = document.getElementById("count-el") </p>
+
+   <h3> Datatype: Numbers</h3>
+   <ul>
+    <li> mathematic equations</li>
+    <ul>
+     <li>+ - * /</li>
+    </ul>
+    <li> increment </li>
+    <ul><li><p class="code">let count = 0 <br>
+     count += 1 <br> 
+     /* or  
+     count = count + 1 */
+     countEl.textContent = count
+    </p></li>
+   <li>example increments by 1 </li>
+   <li>Issue? Check it is += not =+. I flip them sometimes.</li>
+  </ul>
+    <li> decrement </li>
+   <ul><li><p class="code"> count -= 3 <br> /* or just   count = count - 3*/ </p></li></ul>
+   </ul>
+
+   <h3> Datatype: Strings </h3>
+   <ul>
+    <li> The datatype for words, and other series of non-numeric characters.</li>
+    <li> string beats number, so if you force a number to concatinate with a string, the number becomes a string too.</li>
+    <li><p class="code"> "let's count people on the subway!" <br>
+    let countStr = count + " - " <br>
+    let name = Terzia
+    </p></li>
+   </ul>
+
+   <h3> console.log() </h3>
+   <p class="code"> console.log(name) //returns Terzia <br> console.log("name") //returns a string of "name" <br>
+   console.log("1" + 1 ) // returns 11
+  console.log(1 + 1) // returns 2 </p>
+
+  <h3>Functions</h3>
+  <ul>
+   <li> <p class="code"> function increment() { <br>
+    count += 1 <br>
+    countEl.textContent = count
+   </p></li>
+   <li>Invoke from html: <br>
+    <p class="code"> onclick="increment()" </p>
+   </li>
+  </ul>
+
+  <h3> The DOM </h3>
+  <ul>
+   <li>"The Document Object Model</li>
+   <li>"How to use javascript to change the website</li>
+   <li><p class="code"> document.getElementById("save-el")</p></li>
+   <li><p class="code"> document.querySelector("span")</p></li>
+   <li><p class="code"> document.querySelectorAll("h3")</p></li>
+
+   <h4> .innerText </h4>
+   <p class="code"> saveEl.innerText = "I saved"</p>
+   <p> .innerText is resource wasteful, and only shows human-readable content. Nothing hidden, so no un-sandwiched spaces.</p>
+   <h4> .textContent </h4>
+   <p> like .innerText, but preferred.</p>
+  </ul>
+
+  <p> This was my sheet for the <a href="js/practice.js">practice questions</a>. There was also a paid project, which I did on my own, <a href="scoreboard.html">Scoreboard App</a> </p>
+
   </div>
  </div>
 <div>
