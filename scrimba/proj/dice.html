@@ -11,6 +11,8 @@
 
  <span id="show-el"> |=| </span>
 
+ <p><u>hello</u> <s> no hellow</s> </p>
+
  
  <script>
 
@@ -60,20 +62,28 @@ showEl.textContent = dandom
   console.log("Check out the Fyre fesival documentary!")
  }
 
+// Objects - store data in depth. like an array, but more detail. They are called both composite / complex data types. And objects can be stored within objects.
+// Object name = {key:value, key:value}
+//
+
+
  let myCastle = {
   name: "Live like a King in my Castle",
   price: 190,
   rooms: ["4 guests", "1 bedroom", "2 beds", "private half-beach"],
   stars: 4.95,
   location: "Galway",
+  length: 63,
   available: true,
   superhost: true,
+  freeBreakfast: false,
   castle: true
  }
 
  
  console.log(myCastle.rooms)
- console.log(myCastle.price)
+ console.log(myCastle.price)      // dot notation
+ console.log(myCastle["length"])  //bracket notation
 
 
 
