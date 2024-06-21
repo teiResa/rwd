@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+ <title>Recaps</title>
+</head>
+<body>
+ <style> 
+body {
+ /*
+ background-image: url("css/images/bball.jpg");
+ background-size: cover;
+ */
+ background-color: #eef7f2;
+}
+
+@media (min-width: 800px) and (max-width: 3000px) {
+
+ body {
+  background-image: url("css/images/bball.jpg");
+ background-size: cover;
+ overflow-x: hidden;
+ background-color: #f0ecfa;
+}
+
+.container {
+ /*
+ max-width: 600px;
+ display: inline-block;#95b7aab1
+ */
+ background-color: #faefe9;
+ margin: 160px;
+ border-radius:7px;
+ padding-left: 30px;
+ padding-right: 30px;
+}
+
+/*
+.img-full {
+   width: 600px;
+}
+   */
+   
+} /* end of @media tag */
+
+.container {
+ /*
+ max-width: 600px;
+ display: inline-block;
+ */
+ background-color: #95b7aab1;
+ margin: 30px;
+ border-radius:7px;
+ padding-left: 30px;
+ padding-right: 30px;
+ 
+}
+
+
+
+
+  #scrimba-banner {
+   background-image: url("/scrimba/assets/scrimba.jpg");
+   width: 400px;
+   height: 200px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   margin: auto;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  .code {
+   background-color: #faefe9;
+   padding-left: 15px;
+   padding-right: 15px;
+   width: fit-content;
+   font-family: monospace;
+   margin-top: 0px;
+   margin-bottom: 0px;
+  }
+
+  .img-half {
+   width: 320px;
+  }
+
+
+ </style>
+ <div  id="scrimba-banner"></div>
+ <div class="container">
+ <p> Here are my recaps from <a href="https://v2.scrimba.com/learn-javascript-c0v/">the Scrimba course on Javascript</a> . I found this course a fantastic review, which has really increased my JS confidence.</p>
+ <p>Of course, this just covers the content from the course, so check the MDN, and your reference material for more options.</p>
+
+ <div>
+  <h2> Additionals Projects</h2>
+  <div>
+   <a href="crochet_counter.html">Crochet Counter APP</a> is also released on Netlify as <a href="https://crochetcount.netlify.app/">crochetcount.netlify.app</a>
+   <details></details>
+   <a href="scoreboard.html">Scoreboard App</a>
+   <details>
+    This was a paid project, so I just looked at a few people's published work and made my own based on their finished gui. I didn't peak their code. It was ment to be practice.
+   </details>
+  </div>
+ </div>
+ <div>
+  <h2> Recap #1</h2>
+  <div>
+   hellow
+   <details>
+
+   </details>
+  </div>
+ </div>
+<div>
+  <h2> Recap #2 </h2>
+<p>This sections was mainly working on <a href="js/blackjack.js">blackjacks.js</a>, but we also made <a href="js/me.js">me.js</a>, <a href="dice.html">dice.html</a>, <a href=""></a>, and added onto the <a href="racecar.html"> Racecar Game</a></p>
+  <div>
+   <h3>Arrays</h3>
+   <ul>
+    <li> an array is a bunch of data like strings, booleans, numbers, etc stored together</li>
+    <li>arrays are 0-indexed </li>
+    <li><p class="code">.push(), .pop(), .length</p> </li>
+    <li>i is just a random variable name, it could have been any letter. 
+        <details>
+           See? t looks cool too.
+           <p class="code">for ( let t = 0; t < 6; t += 1 ) {
+      console.log(t)
+     } </p>
+     </details> </li>
+     <li> See <a href="js/me.js"> original notes </a> also, <a href="js/blackjack.js">blackjack</a>.</li>
+  </ul>
+  <h3>Objects</h3>
+  <details >
+   <p class="code">
+    let myCastle = {<br>
+     name: "Live like a King in my Castle",<br>
+     price: 190,<br>
+     rooms: ["4 guests", "1 bedroom", "2 beds", "private half-beach"],<br>
+     stars: 4.95,<br>
+     location: "Galway",<br>
+     length: 63,<br>
+     available: true,<br>
+     superhost: true,<br>
+     freeBreakfast: false,<br>
+     castle: true<br>
+    }
+    <br><br>
+   
+    
+    console.log(myCastle.rooms)
+    console.log(myCastle.price)      // dot notation
+    console.log(myCastle["length"])  //bracket notation
+   </p>
+  </details>
+  <ul>
+   <li>store data in depth. like an array, but more detail.</li>
+   <li>They are called both composite / complex data types.</li>
+   <li>And objects can be stored within objects.</li>
+   <li> <p class="code single-line"> Object name = {key:value, key:value}</p> </li>
+   <li> Data contained within the object may be accessed via <i>dot notation</i> or <i>bracket notation</i> <details> 
+    <p class="code">console.log(myCastle.price)      // dot notation <br>
+    console.log(myCastle["length"])  //bracket notation</p>
+    </details> </li>
+   <li> See <a href="dice.html">original notes</a>, specifically the castle example. Also, <a href="js/blackjack.js"> blackjack</a>. </li>
+ </ul>
+
+ 
+ <h3>Booleans</h3>
+ <ul>
+   <li> Is it true or false?</li>
+   <li> <p class="code"> hasBlackjack = true </p></li>
+   <li> See <a href="js/dice.js"> original notes </a> also, <a href="js/blackjack.js">blackjack</a>.</li>
+   
+</ul>
+
+<h3>if else Statements</h3>
+<ul>
+  <li> A series of possiblities.</li>
+  <li> <p class="code">  if (player1Time < player2Time) { <br>
+   return player1Time <br>
+  } else if (player2Time < player1Time) { <br>
+   return player2Time <br>
+  } else { <br>
+   return player1Time <br>
+  } </p></li>
+  <li> See <a href="racecar.html"> original notes </a> also, <a href="js/blackjack.js">blackjack</a>.</li>
+  
+</ul>
+
+<h3>if Statements</h3>
+<ul>
+  <li> Not all if's need an else. </li>
+  <li> <p class="code"> if (hasSolvedChallenge === false && hasHintsLeft === false) showSolution() </p></li>
+  <li> See <a href="js/dice.js"> original notes </a> also, <a href="js/blackjack.js">blackjack</a>.</li>
+  
+</ul>
+
+<h3>Comparison Operators</h3>
+<ul>
+ <li> <= less than or equal to; </li>
+ <li>=== triple equal (strictly true)</li>
+  <li> && and; || or </li>
+  <li> <p class="code"> if (sum < 21) { <br>
+   message = "Another card?" <br>
+ } else if (sum === 21) { <br>
+   message = "Congratulations! Blackjack!" <br>
+ } else { <br>
+  message = "Lost. Another round? " <br>
+ }</p></li>
+  <li> See <a href="js/dice.js"> original notes </a> also, <a href="js/blackjack.js">blackjack</a>.</li>
+  
+</ul>
+
+<h3>Logical Operators</h3>
+<ul>
+  <li> && and (both conditions are true) </li>
+  <li>  || or (either conditions are true) </li>
+  <li> <p class="code"> if (hasSolvedChallenge === false && hasHintsLeft === false) showSolution() <br>
+   if (likesDocumentaries === true || likesStartups === true) recommentMovie() </p></li>
+  <li> See <a href="js/dice.js"> original notes </a> also, <a href="js/blackjack.js">blackjack</a>.</li>
+  
+</ul>
+
+<h3>for Loops</h3>
+<ul>
+  <li> Counting in javascript </li>
+  <li>  Specify:
+   <ol>
+    <li>where to start</li>
+    <li>where to stop</li>
+    <li> what is the step size (by ones, twos, tens, etc)</li>
+   </ol>
+  </li>
+  <li><details> <p class="code"> //        START         STOP         STEP
+   for ( let count = 10; count < 21; count += 1 ){
+    //startih)ng at 1, stop before 11 (runs ten times), counting by ones
+    console.log(count)
+   }</p></details> </li>
+   <li><img src="../assets/for loops.png" class="img-half img-full" alt="image of the p with class of code above. Find it in the details tag immediately above."></li>
+   <li> <p class="code">  for (let i = 0; i < cards.length; i++) { <br>
+    cardsEl.textContent += cards[i] + " " <br>
+    console.log(cards) <br>
+   }</p></li>
+  <li> See <a href="js/me.js"> original notes</a>  also, <a href="js/blackjack.js">blackjack</a>.</li>
+</ul>
+
+<h3>Math Object</h3>
+<ul>
+  <li> math.random() generates a pseudo-random number between 0 and 1 (not including 1, as in 1.0; 0.000 continued -> 0.999 continued) </li>
+  <li>  math.random() * 6 (0.000 -> 5.999) </li>
+  <details> the multiplier is what dictates the highest end of the range. </details>
+  <li> <p class="code"> let randoNum = Math.floor(Math.random() * 6) + 1 <br>
+   return randoNum </p>
+   <details> Returns a number 1 through 6. Without the +1, it would be 0 through 5. The floor makes it not a decimal. The *6 makes the .random number have a rande of 0.000 through 5.999.</details>
+  </li>
+  <li> math.floor() [positive numbers only here, but it works too] removes the decimal, so it is a whole number instead of a decimal </li>
+  <li>math.floor(math.random) ???? Close. See code block above.</li>
+  <li> See <a href="js/dice.js"> original notes </a> also, <a href="js/blackjack.js">blackjack</a>.</li>
+  
+</ul>
+
+<h3>return Statements</h3>
+<ul>
+  <li> returns what it calls upon.  </li>
+  <li> <p class="code">  if ( randomNumber >= 11 ) {
+   return 10
+  } else if ( randomNumber === 1 ){
+ return  11
+  }else {
+  return randomNumber 
+  } </p></li>
+  <li> return [expression] </li>
+  <li> ends function execution and specifies a value to be returned to the function caller. </li>
+  <li>  return statement can only be used within function bodies. When a return statement is used in a function body, the execution of the function is stopped. </li>
+  <li> The MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return">returns </a></li>
+  <li> See <a href="js/dice.js"> original notes </a> also, <a href="js/blackjack.js">blackjack</a>.</li>
+  <li> Will revisit in chrome extension project.</li>
+  
+</ul>
+
+<h3>challenges</h3>
+
+<ul>
+ <li></li>
+</ul>
+
+
+
+
+   
+   <p>~~~~~~~~~~~~ howdy-doo ~~~~~~~~~~~~</p>
+   <details>
+    
+   </details>
+   <h3></h3>
+  </div>
+ </div>
+
+</div>
+ 
+</body>
+</html>

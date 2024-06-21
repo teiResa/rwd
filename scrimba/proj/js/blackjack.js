@@ -6,6 +6,7 @@ let player = {
 let cards = [] // an empty array
 //let cards = [firstCard, secondCard] //array - ordered list of items
 let sum = 0
+let wins = 0
 // let userAge = 21
 let hasBlackJack = false
 let isAlive = false
@@ -14,6 +15,7 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 let playerEl = document.getElementById("player-el")
+let bjCountEl = document.getElementById("bj-count")
 
 playerEl.textContent = player.name + ": " + "€" + player.chips
 
@@ -85,6 +87,18 @@ if (sum < 21) { //   <= 20
 } else if (sum === 21) {
   message = "Congratulations! Blackjack!" //😎🎆
   hasBlackJack = true
+  //bjCountEl.textContent += 1
+  //bjCountEl.textContent = player.wins + 1
+  //once it adds, the new card button starts to fail.
+
+  //player.wins + 1
+
+  //wins++
+  //bjCountEl.textContent = wins
+  // bjCount()
+  // renderGame()
+  
+  
 } else {
  message = "Lost. Another round? " //💀
  isAlive = false
@@ -138,4 +152,15 @@ function newCard () {
         renderGame()
   }
  
+}
+
+
+function bjCount() {
+ if (hasBlackJack === true) {
+  
+  console.log("another win!" + wins)
+   wins++
+  bjCountEl.textContent = wins
+  
+ }
 }
