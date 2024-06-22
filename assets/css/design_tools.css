@@ -1,0 +1,26 @@
+
+.container {
+ width: 320px;
+ height: 460px;
+ border: lightgrey 2px solid;
+ background-color: #d1f1e4;
+}
+
+.top-menu {
+ margin-top: 3px;
+ margin-bottom: 3px;
+ padding-left: 3px;
+ padding-right: 3px;
+ background-color: #eef7f2;
+}
+
+.top-menu input {
+ margin-left: 10px;
+ margin-right: 10px;
+ background-color: #eef7f2;
+}
+
+button i {
+ color: #8ea49b;
+ /*  border-color: #d0f0e3;  */
+}
