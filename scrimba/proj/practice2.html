@@ -80,19 +80,115 @@
  <p> Logical Operators </p>
  <ul> 
   <li> <p class="code">
-   let largeCountries = ["Tuvalu", "India", "United States", "Indonisa", "Monaco"]
+   let dayOfMonth = 13 <br>
+   let weekday = "Friday"
   </p></li>
-  <li> Use .push(), .pop(), .shift(), and .unshift() to fix up the largeCountries array so that China and Pakistan are back in their respective places. </li>
-  <li>Memory trick: push is a longer word than pop, so it makes the array longer. Unshift too, so makes longer too.</li>
-  <li> China is largest of list, and Pakistan is least large. Remove Tuvala and Monaco.</li>
-  <li> Google how to use .shift() and .unshift() </li>
+  <li> If it if Friday the 13th, log out a spooky emoji: 👻🦇🎃🫨😱. Use the logical "and" operator. </li>
  </ul>
 
+ <h3> Practice 6 </h3>
+ <p> pseudo-random </p>
+ <ul> 
+  <li> <p class="code">
+   let hands = ["rock", "paper", "scissors"]
+  </p></li>
+  <li> Create a function that returns a random item from the array. </li>
+  <li> I made my own version to update to emojis ("👊🏻", "✋🏻", "✌🏻") for funsies while helping someone with something else.</li>
+ </ul>
+ 
+ <h3> Practice 7 </h3>
+ <p> Emoji Fighter (array indexing) </p>
+ <ul> 
+  <li> <p class="code">
+   let fighters = ["🦇", "👻",  "🤖", "💀", "🐉", "🐙", "🐠", "😶‍🌫️", "🤠", "🤡", "🥶", "👽", "💩"] <br>
+let stageEl = document.getElementById("stage") <br>
+let fightBtn = document.getElementById("fight-btn") <br>
 
+fightBtn.addEventListener("click", function() { <br>
+ //blank <br>
+ //blank <br>
+})
+  </p></li>
+  <li> When user clicks "pick fighter" button, two fighters appear side-by-side with a "vs" seperating them on stage. Ie. "😶‍🌫️ vs 🦇" </li>
+ </ul>
 
+ <style>
+  .game-container {
+   border: 2px dotted grey;
+   width: 70vw;
+   max-width: 400px;
+   margin-left: 19vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+  }
 
+  #game-title {
+   font-size: larger;
+   letter-spacing: 8px;
+   color: green;
+  }
 
+  #stage {
+   
+   font-size: xx-large;
+  }
 
+  #fight-btn {
+   background-color: rgb(247, 188, 188);
+   color: rgb(143, 44, 44);
+   font-weight: bolder;
+   width:200px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   letter-spacing: 15px;
+  }
+
+ </style>
+
+ <div class="game-container">
+  <h4 id="game-title">Emoji Fighter</h4>
+  <div id="stage"> _ vs _</div>
+  <button id="fight-btn"> FIGHT!</button>
+ </div>
+
+ <h3> Practice 8 </h3>
+ <p> Fruit Sorter </p>
+ <ul> 
+  <li> <p class="code">
+   let fruit = ["🍎", "🍊",  "🍎", "🍎", "🍊"] <br>
+   let appleShelf = document.getElementById("apple-shelf") <br>
+   let orangeShelf = document.getElementById("orange-shelf")
+  </p></li>
+  <li> create a function that puts the apples on the appleShelf and the oranges on theirs. Use a for loop, a conditional statement, and the textContent property. </li>
+ </ul>
+
+ <style>
+  .fruit-shelves {
+    padding: 40px;
+    background: whitesmoke;
+    text-align: center;
+}
+
+#apple-shelf {
+    background: lightcoral;
+    border-radius: 10px;
+    height: 30px;
+    margin: 10px 0;
+}
+
+#orange-shelf {
+    background: lightsalmon;
+    border-radius: 10px;
+    height: 30px;
+}
+ </style>
+ <div class="game-container fruit-shelves">
+  <h4 id="game-title">Fruit Sorter</h4>
+  <div id="apple-shelf"></div>
+  <div id="orange-shelf"></div>
+ </div>
 
 
 

@@ -243,7 +243,7 @@ body {
  <ul>
    <li> Is it true or false?</li>
    <li> <p class="code"> hasBlackjack = true </p></li>
-   <li> See <a href="js/dice.js"> original notes </a> also, <a href="js/blackjack.js">blackjack</a>.</li>
+   <li> See <a href="dice.html"> original notes </a> also, <a href="js/blackjack.js">blackjack</a>.</li>
    
 </ul>
 
@@ -265,7 +265,7 @@ body {
 <ul>
   <li> Not all if's need an else. </li>
   <li> <p class="code"> if (hasSolvedChallenge === false && hasHintsLeft === false) showSolution() </p></li>
-  <li> See <a href="js/dice.js"> original notes </a> also, <a href="js/blackjack.js">blackjack</a>.</li>
+  <li> See <a href="dice.html"> original notes </a> also, <a href="js/blackjack.js">blackjack</a>.</li>
   
 </ul>
 
@@ -281,7 +281,7 @@ body {
  } else { <br>
   message = "Lost. Another round? " <br>
  }</p></li>
-  <li> See <a href="js/dice.js"> original notes </a> also, <a href="js/blackjack.js">blackjack</a>.</li>
+  <li> See <a href="dice.html"> original notes </a> also, <a href="js/blackjack.js">blackjack</a>.</li>
   
 </ul>
 
@@ -291,7 +291,7 @@ body {
   <li>  || or (either conditions are true) </li>
   <li> <p class="code"> if (hasSolvedChallenge === false && hasHintsLeft === false) showSolution() <br>
    if (likesDocumentaries === true || likesStartups === true) recommentMovie() </p></li>
-  <li> See <a href="js/dice.js"> original notes </a> also, <a href="js/blackjack.js">blackjack</a>.</li>
+  <li> See <a href="dice.html"> original notes </a> also, <a href="js/blackjack.js">blackjack</a>.</li>
   
 </ul>
 
@@ -329,7 +329,7 @@ body {
   </li>
   <li> math.floor() [positive numbers only here, but it works too] removes the decimal, so it is a whole number instead of a decimal </li>
   <li>math.floor(math.random) ???? Close. See code block above.</li>
-  <li> See <a href="js/dice.js"> original notes </a> also, <a href="js/blackjack.js">blackjack</a>.</li>
+  <li> See <a href="dice.html"> original notes </a> also, <a href="js/blackjack.js">blackjack</a>.</li>
   
 </ul>
 
@@ -347,7 +347,7 @@ body {
   <li> ends function execution and specifies a value to be returned to the function caller. </li>
   <li>  return statement can only be used within function bodies. When a return statement is used in a function body, the execution of the function is stopped. </li>
   <li> The MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return">returns </a></li>
-  <li> See <a href="js/dice.js"> original notes </a> also, <a href="js/blackjack.js">blackjack</a>.</li>
+  <li> See <a href="dice.html"> original notes </a> also, <a href="js/blackjack.js">blackjack</a>.</li>
   <li> Will revisit in chrome extension project.</li>
 </ul>
 
@@ -369,6 +369,40 @@ body {
     console.log("- " + largeCountries2[i]) <br>
    } </p></li>
   <li> See <a href="js/practice2.js"> original notes </a> and <a href="practice2.html"> its respective html </a> also, <a href="js/blackjack.js">blackjack</a>.</li>
+
+  <li> <p class="code">
+   let fighters = ["🦇", "👻",  "🤖", "💀", "🐉", "🐙", "🐠", "😶‍🌫️", "🤠", "🤡", "🥶", "👽", "💩"] <br>
+   let stageEl = document.getElementById("stage") <br>
+   let fightBtn = document.getElementById("fight-btn") <br>
+   
+   fightBtn.addEventListener("click", function() { <br>
+    <small>// Pick two random numbers</small> <br>
+    let pickerA = Math.floor(Math.random() * fighters.length) <br>
+    let pickerB = Math.floor(Math.random() * fighters.length) <br>
+    <small>// Index the array with those numbers to find which emoji are in those spots.</small> <br>
+    console.log(pickerA + " vs " + pickerB + fighters[pickerA] + " vs " + fighters[pickerB] ) <br>
+    <small>// have it display in the html</small><br>
+    stageEl.textContent = fighters[pickerA] + " vs " + fighters[pickerB]  <br>
+   })</p></li>
+   <li> This is how you index in an array, to see in action, the app was in <a href="practice2.html"> this practice sheet </a> look for Emoji Fighter (Practic 7) </li>
+
+   <li><p class="code">let fruit = ["🍎", "🍊",  "🍎", "🍎", "🍊"] <br> 
+    let appleShelf = document.getElementById("apple-shelf") <br>
+    let orangeShelf = document.getElementById("orange-shelf") <br>
+    <br>
+    function sortFruit() { <br>
+     console.log("🍎", "🍊",  "🍎", "🍎", "🍊") <br>
+    <br>
+     for (i = 0; i < fruit.length; i++) { <br>
+        if (fruit[i] === "🍎") {<br>
+         appleShelf.textContent += "🍎" <br>
+        } else if (fruit[i] === "🍊") {
+         <br>
+         orangeShelf.textContent += "🍊"
+        }} } <br><br>
+    
+    sortFruit()</p></li>
+   <li> The fruity example is how you sort array contents  then display them on the html. Same practice sheet as Emoji Fighter.</li>
   
 
 
