@@ -1,0 +1,22 @@
+body {
+ margin: 0; /* clears browser preset margin */
+ padding: 10px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+/* #5f9341 */
+input {
+ border: #5f9341 1.5px solid;
+ padding: 10px; /* I had 2px 10px */
+ width: 100%; /* True width of this is 100% + padding-left (=== 10px) + padding-right (=== 10px). Box-sizing with border-box fixes this. It makes the width include the side paddings rather than exclue (in addition to) */
+ box-sizing: border-box;
+ margin-bottom: 4px;
+}
+
+button {
+ background-color: #5f9341;
+ border: #5f9341 1px solid;
+ color: #f0f6ef;
+ padding: 10px 20px; /* was 2px 5px for text */
+ font-weight: bold;
+ font-size: large;
+}

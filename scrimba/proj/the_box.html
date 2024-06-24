@@ -1,0 +1,41 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+     <style>
+      html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#box {
+    cursor: pointer;
+    background: lightseagreen;
+    padding: 40px;
+    width: 200px;
+    text-align: center;
+    margin: 20px auto;
+    color: white;
+    font-weight: bold;
+}
+     </style>
+        <div id="box">Open the box!</div>
+
+        <script>
+
+         // 1. Grab the box from the DOM and store it in a variable
+// 2. Add a click event listener to the box 
+// 3. Log out "I want to open the box!" when it's clicked
+         let boxxy = document.getElementById("box")
+         
+         boxxy.addEventListener("click", function(){
+          console.log("I wanna open box!")
+         })
+
+         console.log(boxxy)
+
+        </script>
+    </body>
+</html>
