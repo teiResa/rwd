@@ -12,3 +12,4 @@ let inputBtn = document.getElementById("input-btn").addEventListener("click", fu
  console.log("event listener button")
 })
 
+inputEl = "hihihih"
