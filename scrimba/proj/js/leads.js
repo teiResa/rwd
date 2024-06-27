@@ -42,10 +42,19 @@ for (let i = 0; i < myLeads.length; i++) {
  // Not, ulEl.textContent = myLeads[i] , remember it updates while removing the prior value
 
  // ulEl.textContent += myLeads[i] + " "
-  ulEl.innerHTML += "<li>" + myLeads[i] + "</li>"
+  // ulEl.innerHTML += "<li>" + myLeads[i] + "</li>"
+
+
+
+// write it first innerHTML, then in the new way. What does ulEl.innerHTML += "<li>" + myLeads[i] + "</li>" mean? Well, in steps we 1) create an element, 2) set text content, then 3) append to the ul.
+
+// create element
+document.createElement()
+
+//Use createElement() and append() instead of innerHTML
+
+
 
 }
-
-// write you first innerHTML
-
 // https://v2.scrimba.com/learn-javascript-c0v/~041
+
