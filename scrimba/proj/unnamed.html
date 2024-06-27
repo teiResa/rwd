@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <style>
+  body {
+    text-align: center;
+}
+
+#container {
+    margin-top: 30px;
+}
+
+#container button {
+    background: lightcoral;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+ </style>
+
+ <div id="container"></div>
+
+ <button></button>
+
+
+
+<!--~~~~~~~~~~~ script ~~~~~~~~~~~~~~~~~-->
+ <script> 
+// use .innerHtml to render a Buy! btn inside the div container
+
+const theDiv = document.getElementById("container")
+
+//theDiv.innerHTML = "<button>" + "Buy!" + "</button>"
+theDiv.innerHTML = "<button onclick='buy()'>Buy!</button>"
+
+// add an onclick to your btn, when clicked render a paragraph under the button (but within the container) that says "thank you for buying!"
+
+function buy() {
+ // += adds the span, just = replaces the button with the span (clears the html and replaces it)
+ theDiv.innerHTML += "<span>Thank you for buying</span>"
+}
+
+
+ </script>
+ 
+</body>
+</html>
