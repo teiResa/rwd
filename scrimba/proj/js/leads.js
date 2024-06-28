@@ -1,11 +1,11 @@
-//https://v2.scrimba.com/learn-javascript-c0v/~03s/
+//      https://v2.scrimba.com/learn-javascript-c0v/~03s/
 
 
 
 const inputEl = document.getElementById("input-el")
 let myLeads = [
 // "dummy data" is put temperarily to help with set-up
-"google.com", "applejacks.com", "greatlead.cn.co"
+//"google.com", "applejacks.com", "greatlead.cn.co"
 ]
 const ulEl = document.getElementById("ul-el")
 
@@ -23,9 +23,9 @@ let inputBtn = document.getElementById("input-btn").addEventListener("click", fu
 
  myLeads.push(inputEl.value)
 
-
  //myLeads.push("www.awesomelead.com")
- console.log(myLeads)
+ // console.log(myLeads)
+ renderLeads()
 })
 
 /* Const vs let
@@ -36,25 +36,93 @@ If possible, use const. Else, use let.
 */
 
 
-// to render out the items in a n Array, you first need to loop through the items.
 
+
+// to render out the items in an Array, you first need to loop through the items.
+/*
 for (let i = 0; i < myLeads.length; i++) {
+
+
  // Not, ulEl.textContent = myLeads[i] , remember it updates while removing the prior value
 
  // ulEl.textContent += myLeads[i] + " "
-  // ulEl.innerHTML += "<li>" + myLeads[i] + "</li>"
+  
+ // ulEl.innerHTML += "<li>" + myLeads[i] + "</li>"
 
 
-
+//Use createElement() and append() instead of innerHTML. Together they are used together commonly.
 // write it first innerHTML, then in the new way. What does ulEl.innerHTML += "<li>" + myLeads[i] + "</li>" mean? Well, in steps we 1) create an element, 2) set text content, then 3) append to the ul.
-
+/*
 // create element
-document.createElement()
+const li = document.createElement("li")
+// set text content
+li.textContent = myLeads[i]
+// append to the ul element
+ulEl.append(li)
+*/
 
-//Use createElement() and append() instead of innerHTML
+//  const li = document.createElement("li").textContent = myLeads[i] 
+// ^^^ would have the li elements list horizonatally without spacing or bullets. It doesn't work, because that would be redundant.
+
+// ulEl.innerHTML += "<li>" + myLeads[i] + "</li>"
+
+// after creating a variable called listItems, which will hold the HTML for the list items (Empty for now), add the item to the listItems variable instead of the ulEl.innerHTML. Then render the listItems inside the ul using ulEl.innerHTML
+//listItems = "<li>" + myLeads[i] + "</li>"
+
+// mistake:  (but i think it worked either way)
+// listItems = "<li>" + myLeads[i] + "</li>"
+// ulEl.innerHTML += listItems
+/*
+listItems += "<li>" + myLeads[i] + "</li>"
+/*
+// and then render out outside of the {} block 
+
+/* Was the performant way to do .innerHTML inside of the for loop, remember this sentence:
+
+" DOM manipulation comes with a cost "
+
+and with that you can ask whether it is better to use .innerHTML three times within the loop or to use it once outside of the for loop. If it has a cost, you would prefer to do it just once. Just remember that DOM manipulation has a cost.
+*/
+/*
+}
+ulEl.innerHTML = listItems
+*/
 
 
+
+
+
+
+
+/* lines 44 to 90, but without the notes. */
+function renderLeads() {
+ let listItems = "" // empty string
+ 
+for (let i = 0; i < myLeads.length; i++) { 
+     listItems += "<li>" + myLeads[i] + "</li>"
+}
+ulEl.innerHTML = listItems
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // https://v2.scrimba.com/learn-javascript-c0v/~041
 
