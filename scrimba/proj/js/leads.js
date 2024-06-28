@@ -25,7 +25,12 @@ let inputBtn = document.getElementById("input-btn").addEventListener("click", fu
 
  //myLeads.push("www.awesomelead.com")
  // console.log(myLeads)
+ 
+
+ //clear input field on click by setting its value to "" after the value is pushed to the array
+ inputEl.value = ""
  renderLeads()
+
 })
 
 /* Const vs let
@@ -99,11 +104,42 @@ function renderLeads() {
  let listItems = "" // empty string
  
 for (let i = 0; i < myLeads.length; i++) { 
-     listItems += "<li>" + myLeads[i] + "</li>"
+   // My method: (teacher Perr's was identical)
+       // listItems += "<li><a href='" + myLeads[i] + "' target='_blank'>" + myLeads[i] + "</a></li>"
+     // remember that "" and '' have to complete their pairings
+
+     listItems += `
+         <li>
+            <a href='${myLeads[i]}' target='_blank'>
+                 ${myLeads[i]} 
+            </a>
+         </li>
+      `
+
+
+
+
 }
 ulEl.innerHTML = listItems
 
 }
+
+// Template strings
+// replace the quotes that wrap the string with backticks instead (`` (same button as ~))
+
+// listItems += "<li><a href='" + myLeads[i] + "' target='_blank'>" + myLeads[i] + "</a></li>"
+
+// becomes, with the benefit of allowing formatting to look like proper HTML
+
+/*
+listItems += `
+<li>
+   <a href='${myLeads[i]}' target='_blank'>
+        ${myLeads[i]} 
+   </a>
+</li>
+`
+*/
 
 
 
