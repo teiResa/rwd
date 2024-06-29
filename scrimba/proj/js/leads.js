@@ -124,7 +124,7 @@ ulEl.innerHTML = listItems
 
 }
 
-// Template strings
+// Template strings (aka template literals)
 // replace the quotes that wrap the string with backticks instead (`` (same button as ~))
 
 // listItems += "<li><a href='" + myLeads[i] + "' target='_blank'>" + myLeads[i] + "</a></li>"
