@@ -63,11 +63,28 @@ function buy() {
 const recipient = "James"
 
 // Refactor the email string to use template strings
-const email = "Hey " + recipient + "! How is it going? Cheers Per"
+//const email = "Hey " + recipient + "! How is it going? Cheers Per"
+
+// mistake: $(recipient) -> ${recipient}, also I used unnecessary <p> paragraph tags.
+
+const email = `
+  Hey ${recipient}! How is it going? Cheers, Perr. 
+`
 
 console.log(email)
 
+// make the email variable even more dynamic.
 
+const recipient01 = "Jamesie Wamsie"
+const sender01 = "Perry Berry"
+
+const email01 = ` 
+  Howdy ${recipient01}!
+     Howbe?
+  Cya, ${sender01}.
+ `
+
+ console.log(email01)
 
 
 
