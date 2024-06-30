@@ -122,3 +122,9 @@ for (i = 0; i < sentence.length; i++) {
  // How do you give spaces if they were not hard-coded into the array?
  // .split and .join? .slice? No, just concatinate one. ->    + " "
 }
+
+const welcomeEl = document.getElementById("welcome-el")
+
+function greetUser() {
+ welcomeEl.textContent = "welcome back, perry berry Borgen"
+}

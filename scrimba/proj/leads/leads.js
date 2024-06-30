@@ -1,15 +1,115 @@
 //      https://v2.scrimba.com/learn-javascript-c0v/~03s/
 
-
-
 const inputEl = document.getElementById("input-el")
 let myLeads = [
 // "dummy data" is put temperarily to help with set-up
 //"google.com", "applejacks.com", "greatlead.cn.co"
 ]
+let oldLeads = []
 const ulEl = document.getElementById("ul-el")
+const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+const inputBtn = document.getElementById("input-btn")
+const deleteBtn = document.getElementById("delete-btn")
 
 
+// check if leadsFromLocalStorage is truthy (["example", "example"]) or falsy (null)
+//if so, set myLeads to its value and call render()
+
+if (leadsFromLocalStorage) {
+ // mistake: I had leadsFromLocalStorage === true, but that is too much code for asking whether the variable is a truthy. Just it's name will let us know.
+ console.log("leads found (truthy)")
+ myLeads =  leadsFromLocalStorage 
+ render(myLeads)
+} else{
+ console.log("its falsy. No leads found.")
+}
+
+
+
+console.log(leadsFromLocalStorage)
+
+
+/* Using localStorage
+
+localStorage.setItem("key", "value")
+Please note: both key and value have to be strings
+localStorage.getItem("key")
+localStorage.clear()
+
+if there is nothing to return, the console says NUll. IT is a falsy. If it returns the array, it is a truthy.
+
+JS's falsy values are of 6 possibilities:
+false, 0, "" (an empty string), null, undefined, and NaN (Not a number)
+
+Null vs undefined
+both are primative datatypes, just like strings and numbers.
+both are ways to signalise emptiness
+
+null -> developer signalises emptiness to others and JS
+undefines -> javascript signalises emptiness others and devs
+
+// https://v2.scrimba.com/learn-javascript-c0v/~04m
+
+// Build a Chrome Extension > Truthy and falsy values
+
+check whether truthy of falsy 
+let trueOrFalse = boolean("hello")
+console.log(trueOrFalse)
+
+boolean(" // value to check ")
+*/
+
+/*
+console.log( Boolean("") ) //t or f? f ... f
+// an empty sting is false
+console.log( Boolean("0") ) // t  ... t
+// in "", 0 is a sting, so it is true
+console.log( Boolean(100) ) // f ... t
+// 100 is a number, so truthy
+console.log( Boolean(null)) // f  ... f
+// null is false, because it one of the six falsies
+console.log( Boolean([0]))    // t  ... t
+// an [] is an array, so truthy
+console.log(Boolean(-0))    // f ... f
+// 0, regardless of negative, is always false
+*/
+
+// localStorage.setItem("myLeads", "www.examplelead.com")
+// console.log(localStorage.getItem("myLeads"))
+
+//localStorage.setItem("userName", "Theresa B")
+//console.log(localStorage.getItem("userName"))
+// localStorage.clear()
+
+/* Storing an array in localStorage
+
+As localStorage only supports strings, you must use json.stringify() and json.parse()
+
+var names=[]
+names[0] = prompt("New member name?")
+//takes the array and turns it into an array (stringifys it; array --> string)
+localStorage.setItem("names", JSON.stringify(names))
+//...
+// reverses stringification, so array is turned back into an array (string --> array)
+var storedNames = JSON.parse(localStorage.getItem("names"))
+*/
+/*
+myLeads = JSON.parse(myLeads)
+myLeads.push("www.epicleads.com")
+// typeof reports back what the datatype of the variable is
+console.log(typeof myLeads)
+*/
+
+/*
+// string --> array
+myLeads = JSON.parse(myLeads)
+// push a new value to the array
+myLeads.push("www.theresalead.ca")
+// array --> string
+myLeads = JSON.stringify(myLeads)
+//log out and check datatype is a string
+console.log(typeof myLeads)
+*/
 
 
 /* Is this amature hour? Use the element's id 
@@ -17,7 +117,7 @@ function input() {
  console.log("inputEl clicked")
 } */
 
-let inputBtn = document.getElementById("input-btn").addEventListener("click", function(){
+inputBtn.addEventListener("click", function(){
  console.log("event listener button")
  // push the value of the input of input-el (inputEl)
 
@@ -26,12 +126,26 @@ let inputBtn = document.getElementById("input-btn").addEventListener("click", fu
  //myLeads.push("www.awesomelead.com")
  // console.log(myLeads)
  
-
  //clear input field on click by setting its value to "" after the value is pushed to the array
  inputEl.value = ""
- renderLeads()
+ //save the myLeads array to localStorage
+ localStorage.setItem("myLeads", JSON.stringify(myLeads))
 
+ render(myLeads)
+ console.log(localStorage.getItem("myLeads"))
 })
+
+deleteBtn.addEventListener("dblclick", function() {
+ myLeads = []
+ localStorage.clear()
+ render(myLeads)
+
+ console.log("double clicked")
+})
+
+/* Improving your code with function parameters
+
+*/
 
 /* Const vs let
 
@@ -100,18 +214,18 @@ ulEl.innerHTML = listItems
 
 
 /* lines 44 to 90, but without the notes. */
-function renderLeads() {
+function render(leads) {
  let listItems = "" // empty string
  
-for (let i = 0; i < myLeads.length; i++) { 
+for (let i = 0; i < leads.length; i++) { 
    // My method: (teacher Perr's was identical)
        // listItems += "<li><a href='" + myLeads[i] + "' target='_blank'>" + myLeads[i] + "</a></li>"
      // remember that "" and '' have to complete their pairings
 
      listItems += `
          <li>
-            <a href='${myLeads[i]}' target='_blank'>
-                 ${myLeads[i]} 
+            <a href='${leads[i]}' target='_blank'>
+                 ${leads[i]} 
             </a>
          </li>
       `
