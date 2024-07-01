@@ -6,6 +6,12 @@
  <title>Document</title>
 </head>
 <body>
+
+ <style>
+  body {
+   background-color: #e9e3ff;
+  }
+ </style>
  <h3>Using funtion parameters</h3>
  <p id="welcome-el2"></p>
  <p id="welcome-el"></p>
@@ -27,9 +33,57 @@
 
  <p id="multi-paras"></p>
 
- <h4>Bonus: greeting by time of day</h4>
- <p id="time-greet"></p>
+ <h4> Numbers as Function Parameters</h4>
+ <p title="numbers ad function parameters">
 
+  function add(num0, num1) { <br>
+   return num0 + num1<br>
+  }<br>
+  <br>
+  console.log( add(3, 4)) // 7 <br>
+  console.log( add(9, 102)) // 111 <br>
+ </p>
+
+ <h4>Function Arguments VS Parameters</h4>
+ <div>
+  <div><img src="css/images/parameters-arguments.png" alt="" style="width: 150px;">
+  </div>
+  <div>
+
+
+ <p>
+  function funtionName(parameter0, parameter1) { <br>
+   welcome-el.textContent = `${greeting}, ${name}! ✌🏻` <br>
+  }<br>
+  functionName("argument0", argument1)
+ </p>
+ <p> Argument and parameter are basically the same thing. Some people have opinions, but most devs mix up the words all the time. </p>
+ <p> Parameters are defined while you write the original function.</p>
+ <p> Arguments are values "passed in" when the function is called.</p>
+ <p>arguments are created on the outside of the function</p>
+
+ <details> <summary> Questions</summary>
+  <span>✔️✖️</span>
+ <h5>What are greeting and name?</h5>
+ <small>parameters ✔️</small>
+ <h5>What are "howdy" and "James"?</h5>
+ <small>arguments✔️</small>
+ <h5>what are num0 and num1?</h5>
+ <small>parameters✔️</small>
+ <h5>What are 3 and 4?</h5>
+ <small>arguments✔️</small>
+ </details>
+
+
+  </div>
+ </div>
+
+ <h4>Arrays as Function Parameters</h4>
+<p></p>
+
+
+ <h4>Bonus: greeting by time of day</h4>
+<p id="time-greet"></p>
  <hr>
  <h3>Using Arrays for .textContent</h3>
 

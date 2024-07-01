@@ -156,3 +156,41 @@ function greetyMulti(greety, namey, emojiy) {
 }
 
 greetyMulti("Hi", "Joel Da Mole", "🐙")
+
+
+function add(num0, num1) {
+ // numFnParameter.textContent = sum
+  
+ //sum = ` ${num0} + ${num1} `
+ return num0 + num1
+}
+
+console.log( add(3, 4)) // 7
+console.log( add(9, 102)) // 111
+
+
+//Arrays as Function Parameters
+
+//Create a function, getFirst(arr), that returns the first item in the array
+//arr === array, but as the only parameter
+
+
+function getFirst(arr) {
+ return arr[0]
+}
+
+//Call it with an array as an argument to verify that it works
+
+console.log( getFirst(["cat", "dog", "fish"]))
+
+
+//Perr's (adjusted not to mess with mine)
+
+function getSecond(array1) {
+ return array1[1] //0-indexed ... 1 is second spot
+}
+
+let secondCard = getSecond([2, 10, 5])
+
+
+console.log(secondCard)

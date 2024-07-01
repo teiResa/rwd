@@ -10,6 +10,7 @@ const ulEl = document.getElementById("ul-el")
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 const inputBtn = document.getElementById("input-btn")
 const deleteBtn = document.getElementById("delete-btn")
+const tabBtn = document.getElementById("tab-btn")
 
 
 // check if leadsFromLocalStorage is truthy (["example", "example"]) or falsy (null)
@@ -24,9 +25,27 @@ if (leadsFromLocalStorage) {
  console.log("its falsy. No leads found.")
 }
 
-
-
 console.log(leadsFromLocalStorage)
+
+const tabs = [
+ {url: "https://www.linkedin.com/in/per-harald-borgen/"}
+]
+
+
+tabBtn.addEventListener("click", function(){
+ // get the 0th position of the array and convert the value (of the key:value pair) to an url
+ console.log(tabs[0].url)
+ // save the url instead of just logging it out
+ // save it to .localStorage, add to the myLeads array, and trigger a render
+
+
+ //save the myLeads array to localStorage
+ localStorage.setItem("myLeads", JSON.stringify(myLeads))
+
+ render(myLeads)
+ console.log(localStorage.getItem("myLeads"))
+
+}) 
 
 
 /* Using localStorage
@@ -214,6 +233,8 @@ ulEl.innerHTML = listItems
 
 
 /* lines 44 to 90, but without the notes. */
+
+// https://v2.scrimba.com/learn-javascript-c0v/~051/ to see refactoring of renderLeads() to use the leads parameter
 function render(leads) {
  let listItems = "" // empty string
  
