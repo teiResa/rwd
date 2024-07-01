@@ -107,7 +107,7 @@ for (i = 0; i < cards.length; i += 1) {
  //  i += 1 could be replaced with i++ . Increments i with one.
  console.log(cards[i])
 }
-
+freeboie
 */
 
 let sentence = ["hello", "my", "name", "is", "Per"]
