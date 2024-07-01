@@ -107,7 +107,7 @@ for (i = 0; i < cards.length; i += 1) {
  //  i += 1 could be replaced with i++ . Increments i with one.
  console.log(cards[i])
 }
-freeboie
+
 */
 
 let sentence = ["hello", "my", "name", "is", "Per"]
@@ -124,7 +124,35 @@ for (i = 0; i < sentence.length; i++) {
 }
 
 const welcomeEl = document.getElementById("welcome-el")
+const welcomeEl2 = document.getElementById("welcome-el2")
+const multiParas = document.getElementById("multi-paras")
 
-function greetUser() {
- welcomeEl.textContent = "welcome back, perry berry Borgen"
+
+//function greetUser(parameter) {...}
+function greetUser(name) {
+ welcomeEl.textContent = "welcome back, "+ name +""
 }
+
+function timeGreeting(greeting) {
+ // welcomeEl2.textContent = " "+ greeting +" , Mr. Per Harald Borgen"
+
+ welcomeEl2.textContent = greeting +" , Mr. Per Harald Borgen"
+}
+
+greetUser("Pierre")
+timeGreeting("Morning!")
+
+
+function greetyMulti(greety, namey, emojiy) {
+ //multiParas.textContent = greety + ", " + namey + "🐙"
+ /*
+ multiParas.textContent = `
+ ${greety}, ${namey} 🐙
+ `
+ */
+ multiParas.textContent = `
+ ${greety}, ${namey} ${emojiy}
+ `
+}
+
+greetyMulti("Hi", "Joel Da Mole", "🐙")
