@@ -38,6 +38,7 @@ tabBtn.addEventListener("click", function(){
  // save the url instead of just logging it out
  // save it to .localStorage, add to the myLeads array, and trigger a render
 
+ //     https://v2.scrimba.com/learn-javascript-c0v/~053
 
  //save the myLeads array to localStorage
  localStorage.setItem("myLeads", JSON.stringify(myLeads))
