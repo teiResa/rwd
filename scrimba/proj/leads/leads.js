@@ -27,16 +27,49 @@ if (leadsFromLocalStorage) {
 
 console.log(leadsFromLocalStorage)
 
+/*
 const tabs = [
  {url: "https://www.linkedin.com/in/per-harald-borgen/"}
 ]
-
+*/
 
 tabBtn.addEventListener("click", function(){
+// using google API, grab the tab URL
+// https://stackoverflow.com/questions/6132018/how-can-i-get-the-current-tab-url-for-chrome-extension
+
+/*
+chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+ //chrome.tabs is an API, so it can only be run in the context of being a chrome tab. Chrome.tabs is undefined unless viewing as an extension.
+ // since only one tab should be active and in the current window at once
+ // the return variable should only have one entry
+ let activeTab = tabs[0]
+ let activeTabId = activeTab.id // or do whatever you need
+});
+*/
+
+// specify which tab to query inside of the {}s using an object, active: true gives the active tab, currentWindow: true specifies the avctive window too.
+// the function is triggered once chrome finds the requsted window's active tab, which will give us a tabs variable.
+chrome.tabs.query({active: true, currentWindow: true }, function(tabs){
+
+  // Now that we have the tabs variable: push the tab's url to myLeads array, save to storage (key:stringify the value), and call the render.
+
+  myLeads.push(tabs[0].url) 
+  localStorage.setItem("myleads", JSON.stringify(myLeads))
+  render(myLeads)
+
+
+
+
+})
+
+
+
  // get the 0th position of the array and convert the value (of the key:value pair) to an url
- console.log(tabs[0].url)
+ //console.log(tabs[0].url)
+
  // save the url instead of just logging it out
  // save it to .localStorage, add to the myLeads array, and trigger a render
+ myLeads.push(tabs[0].url)
 
  //     https://v2.scrimba.com/learn-javascript-c0v/~053
 
@@ -44,7 +77,7 @@ tabBtn.addEventListener("click", function(){
  localStorage.setItem("myLeads", JSON.stringify(myLeads))
 
  render(myLeads)
- console.log(localStorage.getItem("myLeads"))
+ // console.log(localStorage.getItem("myLeads"))
 
 }) 
 
