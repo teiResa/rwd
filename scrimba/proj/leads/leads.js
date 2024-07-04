@@ -54,16 +54,14 @@ chrome.tabs.query({active: true, currentWindow: true }, function(tabs){
   // Now that we have the tabs variable: push the tab's url to myLeads array, save to storage (key:stringify the value), and call the render.
 
   myLeads.push(tabs[0].url) 
-  localStorage.setItem("myleads", JSON.stringify(myLeads))
+  localStorage.setItem("myLeads", JSON.stringify(myLeads))
   render(myLeads)
-
-
 
 
 })
 
 
-
+/*
  // get the 0th position of the array and convert the value (of the key:value pair) to an url
  //console.log(tabs[0].url)
 
@@ -78,7 +76,7 @@ chrome.tabs.query({active: true, currentWindow: true }, function(tabs){
 
  render(myLeads)
  // console.log(localStorage.getItem("myLeads"))
-
+*/
 }) 
 
  // very anxious about going to the hospital tomorrow. 2024-07-03

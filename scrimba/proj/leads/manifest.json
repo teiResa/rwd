@@ -9,5 +9,24 @@
  },
  "permissions": [
   "tabs"
- ]
+ ],
+
+
+ "content_scripts": [{
+ 
+  "css": [
+     "css/fontawesome.min.css",
+     "css/regular.min.css",
+     "css/brands.min.css"
+  ]
+}],
+"web_accessible_resources": [
+    "css/fontawesome.min.css",
+    "css/regular.min.css",
+    "webfonts/fa-regular-400.woff2", 
+    "webfonts/fa-brands-400.woff2"
+]
+
+
+
 }
