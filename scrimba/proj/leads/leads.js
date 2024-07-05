@@ -56,8 +56,7 @@ chrome.tabs.query({active: true, currentWindow: true }, function(tabs){
   myLeads.push(tabs[0].url) 
   localStorage.setItem("myLeads", JSON.stringify(myLeads))
   render(myLeads)
-
-
+// working on getting the font awesome working. Chrome Extension manager refuses to let the update pass as is/
 })
 
 
